@@ -39,11 +39,13 @@ diff --git a/src/cowboy_listener.erl b/src/cowboy_listener.erl
 index c19d079..86e87f1 100644
 --- a/src/cowboy_listener.erl
 +++ b/src/cowboy_listener.erl
-@@ -24,7 +24,7 @@
+@@ -23,8 +23,8 @@
+ 
  -record(state, {
  	req_pools = [] :: [{atom(), non_neg_integer()}],
- 	reqs_table :: ets:tid(),
+-	reqs_table :: ets:tid(),
 -	queue = [] :: [{pid(), reference()}]
++	reqs_table :: tid(),
 +	queue = []
  }).
  
