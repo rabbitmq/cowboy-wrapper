@@ -45,7 +45,7 @@ index c19d079..86e87f1 100644
  	req_pools = [] :: [{atom(), non_neg_integer()}],
 -	reqs_table :: ets:tid(),
 -	queue = [] :: [{pid(), reference()}]
-+	reqs_table :: tid(),
++	reqs_table,
 +	queue = []
  }).
  
