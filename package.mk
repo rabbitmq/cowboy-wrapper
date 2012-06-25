@@ -10,7 +10,8 @@ WRAPPER_PATCHES:=\
 	0004-R12-drop-references-to-iodata-type.patch \
 	0005-R12-drop-references-to-Default-any-type.patch \
 	0006-Use-erlang-integer_to_list-and-lists-max-instead-of-.patch \
-	0007-R12-type-definitions-must-be-ordered.patch
+	0007-R12-type-definitions-must-be-ordered.patch \
+	0008-R14A-ets-read-concurrency.patch
 
 # Path include/http.hrl is needed during compilation
 INCLUDE_DIRS+=$(CLONE_DIR)

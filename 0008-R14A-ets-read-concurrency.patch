@@ -1,0 +1,13 @@
+diff --git a/src/cowboy_clock.erl b/src/cowboy_clock.erl
+index c699f4f..79ece74 100644
+--- a/src/cowboy_clock.erl
++++ b/src/cowboy_clock.erl
+@@ -87,7 +87,7 @@ rfc2109(LocalTime) ->
+ -spec init([]) -> {ok, #state{}}.
+ init([]) ->
+ 	?TABLE = ets:new(?TABLE, [set, protected,
+-		named_table, {read_concurrency, true}]),
++		named_table]),
+ 	T = erlang:universaltime(),
+ 	B = update_rfc1123(<<>>, undefined, T),
+ 	{ok, TRef} = timer:send_interval(1000, update),
