@@ -1,6 +1,6 @@
 APP_NAME:=cowboy
 
-UPSTREAM_GIT:=https://github.com/extend/cowboy.git
+UPSTREAM_GIT:=https://github.com/rabbitmq/cowboy.git
 UPSTREAM_REVISION:=4b93c2d19a10e5d9cee
 RETAIN_ORIGINAL_VERSION:=true
 WRAPPER_PATCHES:=\
