@@ -1,0 +1,13 @@
+diff --git a/src/cowboy_static.erl b/src/cowboy_static.erl
+index c9edf38..198bd70 100644
+--- a/src/cowboy_static.erl
++++ b/src/cowboy_static.erl
+@@ -218,7 +218,7 @@ rest_init(Req, Opts) ->
+ 	Directory1 = directory_path(Directory),
+ 	Mimetypes = proplists:get_value(mimetypes, Opts, []),
+ 	Mimetypes1 = case Mimetypes of
+-		{{M, F}, E} -> {fun M:F/2, E};
++		{{M, F}, E} -> {fun (A, B) -> M:F(A, B) end, E};
+ 		{_, _} -> Mimetypes;
+ 		[] -> {fun path_to_mimetypes/2, []};
+ 		[_|_] -> {fun path_to_mimetypes/2, Mimetypes}

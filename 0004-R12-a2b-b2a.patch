@@ -1,0 +1,26 @@
+diff --git a/src/cowboy_multipart.erl b/src/cowboy_multipart.erl
+index ed43b2b..5491a57 100644
+--- a/src/cowboy_multipart.erl
++++ b/src/cowboy_multipart.erl
+@@ -170,7 +170,7 @@ parse_headers(Bin, Pattern, Acc) ->
+ 	case erlang:decode_packet(httph_bin, Bin, []) of
+ 		{ok, {http_header, _, Name, _, Value}, Rest} ->
+ 			Name2 = case is_atom(Name) of
+-				true -> cowboy_bstr:to_lower(atom_to_binary(Name, latin1));
++				true -> cowboy_bstr:to_lower(list_to_binary(atom_to_list(Name)));
+ 				false -> cowboy_bstr:to_lower(Name)
+ 			end,
+ 			parse_headers(Rest, Pattern, [{Name2, Value} | Acc]);
+diff --git a/src/cowboy_router.erl b/src/cowboy_router.erl
+index 8fe6910..54e93d7 100644
+--- a/src/cowboy_router.erl
++++ b/src/cowboy_router.erl
+@@ -108,7 +108,7 @@ compile_rules(<< S, Rest/binary >>, S, Segments, Rules, Acc) ->
+ 	compile_rules(Rest, S, [Acc|Segments], Rules, <<>>);
+ compile_rules(<< $:, Rest/binary >>, S, Segments, Rules, <<>>) ->
+ 	{NameBin, Rest2} = compile_binding(Rest, S, <<>>),
+-	Name = binary_to_atom(NameBin, utf8),
++	Name = list_to_atom(binary_to_list(NameBin)),
+ 	compile_rules(Rest2, S, Segments, Rules, Name);
+ compile_rules(<< $:, _/binary >>, _, _, _, _) ->
+ 	erlang:error(badarg);

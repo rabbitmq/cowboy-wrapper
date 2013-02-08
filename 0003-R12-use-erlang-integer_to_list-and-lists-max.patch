@@ -1,0 +1,70 @@
+diff --git a/src/cowboy_http.erl b/src/cowboy_http.erl
+index 650bf60..762a4b2 100644
+--- a/src/cowboy_http.erl
++++ b/src/cowboy_http.erl
+@@ -862,7 +862,7 @@ te_chunked(Data, {0, Streamed}) ->
+ 	%% @todo We are expecting an hex size, not a general token.
+ 	token(Data,
+ 		fun (<< "\r\n", Rest/binary >>, BinLen) ->
+-				Len = list_to_integer(binary_to_list(BinLen), 16),
++				Len = erlang:list_to_integer(binary_to_list(BinLen), 16),
+ 				te_chunked(Rest, {Len, Streamed});
+ 			%% Chunk size shouldn't take too many bytes,
+ 			%% don't try to stream forever.
+diff --git a/src/cowboy_multipart.erl b/src/cowboy_multipart.erl
+index 0293750..ed43b2b 100644
+--- a/src/cowboy_multipart.erl
++++ b/src/cowboy_multipart.erl
+@@ -103,7 +103,7 @@ prefixes(<<>>, Acc) ->
+ %%-spec suffix_match(binary(), patterns()) -> nomatch | {integer(), integer()}.
+ suffix_match(Bin, {_Boundary, {Pat, Len}}) ->
+ 	Size = byte_size(Bin),
+-	suffix_match(Bin, Pat, Size, max(-Size, -Len)).
++	suffix_match(Bin, Pat, Size, lists:max([-Size, -Len])).
+ 
+ %%-spec suffix_match(binary(), binary:cp(), non_neg_integer(), 0|neg_integer()) ->
+ %%		nomatch | {integer(), integer()}.
+@@ -144,7 +144,7 @@ parse_boundary_eol(Bin, Pattern) ->
+ 			cowboy_http:whitespace(Rest, Fun);
+ 		nomatch ->
+ 			% CRLF not found in the given binary.
+-			RestStart = max(byte_size(Bin) - 1, 0),
++			RestStart = lists:max([byte_size(Bin) - 1, 0]),
+ 			<<_:RestStart/binary, Rest/binary>> = Bin,
+ 			more(Rest, fun (NewBin) -> parse_boundary_eol(NewBin, Pattern) end)
+ 	end.
+@@ -226,7 +226,7 @@ skip(Bin, Pattern = {{P, PSize}, _}) ->
+ 			parse_boundary_tail(Rest, Pattern);
+ 		nomatch ->
+ 			% Boundary not found, need more data.
+-			RestStart = max(byte_size(Bin) - PSize + 1, 0),
++			RestStart = lists:max([byte_size(Bin) - PSize + 1, 0]),
+ 			<<_:RestStart/binary, Rest/binary>> = Bin,
+ 			more(Rest, fun (NewBin) -> skip(NewBin, Pattern) end)
+ 	end.
+diff --git a/src/cowboy_req.erl b/src/cowboy_req.erl
+index d92449d..76bf58f 100644
+--- a/src/cowboy_req.erl
++++ b/src/cowboy_req.erl
+@@ -1028,7 +1028,7 @@ chunk(_Data, #http_req{method= <<"HEAD">>}) ->
+ chunk(Data, #http_req{socket=Socket, transport=Transport, version={1, 0}}) ->
+ 	Transport:send(Socket, Data);
+ chunk(Data, #http_req{socket=Socket, transport=Transport, resp_state=chunks}) ->
+-	Transport:send(Socket, [integer_to_list(iolist_size(Data), 16),
++	Transport:send(Socket, [erlang:integer_to_list(iolist_size(Data), 16),
+ 		<<"\r\n">>, Data, <<"\r\n">>]).
+ 
+ %% @doc Send an upgrade reply.
+diff --git a/src/cowboy_static.erl b/src/cowboy_static.erl
+index 198bd70..65222f6 100644
+--- a/src/cowboy_static.erl
++++ b/src/cowboy_static.erl
+@@ -432,7 +432,7 @@ no_etag_function(_Args, undefined) ->
+ attr_etag_function(Args, Attrs) ->
+ 	[[_|H]|T] = [begin
+ 		{_,Pair} = {_,{_,_}} = {Attr,lists:keyfind(Attr, 1, Args)},
+-		[$-|integer_to_list(erlang:phash2(Pair, 1 bsl 32), 16)]
++		[$-|erlang:integer_to_list(erlang:phash2(Pair, 1 bsl 32), 16)]
+ 	end || Attr <- Attrs],
+ 	{strong, list_to_binary([H|T])}.
+ 

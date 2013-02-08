@@ -1,16 +1,13 @@
 APP_NAME:=cowboy
 
 UPSTREAM_GIT:=https://github.com/rabbitmq/cowboy.git
-UPSTREAM_REVISION:=4b93c2d19a10e5d9cee
+UPSTREAM_REVISION:=efbd9133261e1aabf473f2f6f5ab4cbb36062481
 RETAIN_ORIGINAL_VERSION:=true
-WRAPPER_PATCHES:=\
-	0001-R12-fake-iodata-type.patch \
-	0002-R12-drop-all-references-to-boolean-type.patch \
-	0003-R12-drop-all-references-to-reference-type.patch \
-	0004-R12-drop-references-to-iodata-type.patch \
-	0005-R12-drop-references-to-Default-any-type.patch \
-	0006-Use-erlang-integer_to_list-and-lists-max-instead-of-.patch \
-	0007-R12-type-definitions-must-be-ordered.patch
+WRAPPER_PATCHES:= \
+	0001-R12-remove-all-specs.patch \
+	0002-R12-function-literal.patch \
+	0003-R12-use-erlang-integer_to_list-and-lists-max.patch \
+	0004-R12-a2b-b2a.patch \
 
 # Path include/http.hrl is needed during compilation
 INCLUDE_DIRS+=$(CLONE_DIR)

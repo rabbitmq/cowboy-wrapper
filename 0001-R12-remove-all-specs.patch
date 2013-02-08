@@ -1,0 +1,3297 @@
+diff --git a/examples/basic_auth/src/basic_auth_sup.erl b/examples/basic_auth/src/basic_auth_sup.erl
+index 6219b5f..2733c07 100644
+--- a/examples/basic_auth/src/basic_auth_sup.erl
++++ b/examples/basic_auth/src/basic_auth_sup.erl
+@@ -12,7 +12,7 @@
+ 
+ %% API.
+ 
+--spec start_link() -> {ok, pid()}.
++%%-spec start_link() -> {ok, pid()}.
+ start_link() ->
+ 	supervisor:start_link({local, ?MODULE}, ?MODULE, []).
+ 
+diff --git a/examples/chunked_hello_world/src/chunked_hello_world_sup.erl b/examples/chunked_hello_world/src/chunked_hello_world_sup.erl
+index 08bdb71..348e2de 100644
+--- a/examples/chunked_hello_world/src/chunked_hello_world_sup.erl
++++ b/examples/chunked_hello_world/src/chunked_hello_world_sup.erl
+@@ -12,7 +12,7 @@
+ 
+ %% API.
+ 
+--spec start_link() -> {ok, pid()}.
++%%-spec start_link() -> {ok, pid()}.
+ start_link() ->
+ 	supervisor:start_link({local, ?MODULE}, ?MODULE, []).
+ 
+diff --git a/examples/compress_response/src/compress_response_sup.erl b/examples/compress_response/src/compress_response_sup.erl
+index d1bc312..20c1820 100644
+--- a/examples/compress_response/src/compress_response_sup.erl
++++ b/examples/compress_response/src/compress_response_sup.erl
+@@ -12,7 +12,7 @@
+ 
+ %% API.
+ 
+--spec start_link() -> {ok, pid()}.
++%%-spec start_link() -> {ok, pid()}.
+ start_link() ->
+ 	supervisor:start_link({local, ?MODULE}, ?MODULE, []).
+ 
+diff --git a/examples/cookie/src/cookie_sup.erl b/examples/cookie/src/cookie_sup.erl
+index 5ba4e53..bc9ca61 100644
+--- a/examples/cookie/src/cookie_sup.erl
++++ b/examples/cookie/src/cookie_sup.erl
+@@ -12,7 +12,7 @@
+ 
+ %% API.
+ 
+--spec start_link() -> {ok, pid()}.
++%%-spec start_link() -> {ok, pid()}.
+ start_link() ->
+ 	supervisor:start_link({local, ?MODULE}, ?MODULE, []).
+ 
+diff --git a/examples/echo_get/src/echo_get_sup.erl b/examples/echo_get/src/echo_get_sup.erl
+index 455af04..9d091ae 100644
+--- a/examples/echo_get/src/echo_get_sup.erl
++++ b/examples/echo_get/src/echo_get_sup.erl
+@@ -12,7 +12,7 @@
+ 
+ %% API.
+ 
+--spec start_link() -> {ok, pid()}.
++%%-spec start_link() -> {ok, pid()}.
+ start_link() ->
+ 	supervisor:start_link({local, ?MODULE}, ?MODULE, []).
+ 
+diff --git a/examples/echo_post/src/echo_post_sup.erl b/examples/echo_post/src/echo_post_sup.erl
+index 6f973c0..cf63bfe 100644
+--- a/examples/echo_post/src/echo_post_sup.erl
++++ b/examples/echo_post/src/echo_post_sup.erl
+@@ -12,7 +12,7 @@
+ 
+ %% API.
+ 
+--spec start_link() -> {ok, pid()}.
++%%-spec start_link() -> {ok, pid()}.
+ start_link() ->
+ 	supervisor:start_link({local, ?MODULE}, ?MODULE, []).
+ 
+diff --git a/examples/hello_world/src/hello_world_sup.erl b/examples/hello_world/src/hello_world_sup.erl
+index 01fbe3b..946d337 100644
+--- a/examples/hello_world/src/hello_world_sup.erl
++++ b/examples/hello_world/src/hello_world_sup.erl
+@@ -12,7 +12,7 @@
+ 
+ %% API.
+ 
+--spec start_link() -> {ok, pid()}.
++%%-spec start_link() -> {ok, pid()}.
+ start_link() ->
+ 	supervisor:start_link({local, ?MODULE}, ?MODULE, []).
+ 
+diff --git a/examples/rest_hello_world/src/rest_hello_world_sup.erl b/examples/rest_hello_world/src/rest_hello_world_sup.erl
+index 3c0cecc..cf3b129 100644
+--- a/examples/rest_hello_world/src/rest_hello_world_sup.erl
++++ b/examples/rest_hello_world/src/rest_hello_world_sup.erl
+@@ -12,7 +12,7 @@
+ 
+ %% API.
+ 
+--spec start_link() -> {ok, pid()}.
++%%-spec start_link() -> {ok, pid()}.
+ start_link() ->
+ 	supervisor:start_link({local, ?MODULE}, ?MODULE, []).
+ 
+diff --git a/examples/rest_pastebin/src/rest_pastebin_sup.erl b/examples/rest_pastebin/src/rest_pastebin_sup.erl
+index b5f08d7..4308107 100644
+--- a/examples/rest_pastebin/src/rest_pastebin_sup.erl
++++ b/examples/rest_pastebin/src/rest_pastebin_sup.erl
+@@ -12,7 +12,7 @@
+ 
+ %% API.
+ 
+--spec start_link() -> {ok, pid()}.
++%%-spec start_link() -> {ok, pid()}.
+ start_link() ->
+ 	supervisor:start_link({local, ?MODULE}, ?MODULE, []).
+ 
+diff --git a/examples/static_world/src/static_world_sup.erl b/examples/static_world/src/static_world_sup.erl
+index a57d07a..38c8a79 100644
+--- a/examples/static_world/src/static_world_sup.erl
++++ b/examples/static_world/src/static_world_sup.erl
+@@ -12,7 +12,7 @@
+ 
+ %% API.
+ 
+--spec start_link() -> {ok, pid()}.
++%%-spec start_link() -> {ok, pid()}.
+ start_link() ->
+ 	supervisor:start_link({local, ?MODULE}, ?MODULE, []).
+ 
+diff --git a/examples/websocket/src/websocket_sup.erl b/examples/websocket/src/websocket_sup.erl
+index 40ef8e0..64eb290 100644
+--- a/examples/websocket/src/websocket_sup.erl
++++ b/examples/websocket/src/websocket_sup.erl
+@@ -12,7 +12,7 @@
+ 
+ %% API.
+ 
+--spec start_link() -> {ok, pid()}.
++%%-spec start_link() -> {ok, pid()}.
+ start_link() ->
+ 	supervisor:start_link({local, ?MODULE}, ?MODULE, []).
+ 
+diff --git a/src/cowboy.erl b/src/cowboy.erl
+index 79dbb71..491395a 100644
+--- a/src/cowboy.erl
++++ b/src/cowboy.erl
+@@ -20,20 +20,20 @@
+ -export([stop_listener/1]).
+ 
+ %% @doc Start an HTTP listener.
+--spec start_http(any(), non_neg_integer(), any(), any()) -> {ok, pid()}.
++%%-spec start_http(any(), non_neg_integer(), any(), any()) -> {ok, pid()}.
+ start_http(Ref, NbAcceptors, TransOpts, ProtoOpts)
+ 		when is_integer(NbAcceptors), NbAcceptors > 0 ->
+ 	ranch:start_listener(Ref, NbAcceptors,
+ 		ranch_tcp, TransOpts, cowboy_protocol, ProtoOpts).
+ 
+ %% @doc Start an HTTPS listener.
+--spec start_https(any(), non_neg_integer(), any(), any()) -> {ok, pid()}.
++%%-spec start_https(any(), non_neg_integer(), any(), any()) -> {ok, pid()}.
+ start_https(Ref, NbAcceptors, TransOpts, ProtoOpts)
+ 		when is_integer(NbAcceptors), NbAcceptors > 0 ->
+ 	ranch:start_listener(Ref, NbAcceptors,
+ 		ranch_ssl, TransOpts, cowboy_protocol, ProtoOpts).
+ 
+ %% @doc Stop a listener.
+--spec stop_listener(any()) -> ok.
++%%-spec stop_listener(any()) -> ok.
+ stop_listener(Ref) ->
+ 	ranch:stop_listener(Ref).
+diff --git a/src/cowboy_bstr.erl b/src/cowboy_bstr.erl
+index 01ed9ae..3ebfe15 100644
+--- a/src/cowboy_bstr.erl
++++ b/src/cowboy_bstr.erl
+@@ -35,7 +35,7 @@
+ %% others. Note that using this form isn't required, as header name
+ %% are case insensitive, and it is only provided for use with eventual
+ %% badly implemented clients.
+--spec capitalize_token(B) -> B when B::binary().
++%%-spec capitalize_token(B) -> B when B::binary().
+ capitalize_token(B) ->
+ 	capitalize_token(B, true, <<>>).
+ capitalize_token(<<>>, _, Acc) ->
+@@ -48,19 +48,19 @@ capitalize_token(<< C, Rest/bits >>, false, Acc) ->
+ 	capitalize_token(Rest, false, << Acc/binary, (char_to_lower(C)) >>).
+ 
+ %% @doc Convert a binary string to lowercase.
+--spec to_lower(B) -> B when B::binary().
++%%-spec to_lower(B) -> B when B::binary().
+ to_lower(B) ->
+ 	<< << (char_to_lower(C)) >> || << C >> <= B >>.
+ 
+ %% @doc Convert a binary string to uppercase.
+--spec to_upper(B) -> B when B::binary().
++%%-spec to_upper(B) -> B when B::binary().
+ to_upper(B) ->
+ 	<< << (char_to_upper(C)) >> || << C >> <= B >>.
+ 
+ %% @doc Convert [A-Z] characters to lowercase.
+ %% @end
+ %% We gain noticeable speed by matching each value directly.
+--spec char_to_lower(char()) -> char().
++%%-spec char_to_lower(char()) -> char().
+ char_to_lower($A) -> $a;
+ char_to_lower($B) -> $b;
+ char_to_lower($C) -> $c;
+@@ -90,7 +90,7 @@ char_to_lower($Z) -> $z;
+ char_to_lower(Ch) -> Ch.
+ 
+ %% @doc Convert [a-z] characters to uppercase.
+--spec char_to_upper(char()) -> char().
++%%-spec char_to_upper(char()) -> char().
+ char_to_upper($a) -> $A;
+ char_to_upper($b) -> $B;
+ char_to_upper($c) -> $C;
+diff --git a/src/cowboy_clock.erl b/src/cowboy_clock.erl
+index 71bcb21..a78badf 100644
+--- a/src/cowboy_clock.erl
++++ b/src/cowboy_clock.erl
+@@ -52,22 +52,22 @@
+ %% API.
+ 
+ %% @private
+--spec start_link() -> {ok, pid()}.
++%%-spec start_link() -> {ok, pid()}.
+ start_link() ->
+ 	gen_server:start_link({local, ?SERVER}, ?MODULE, [], []).
+ 
+ %% @private
+--spec stop() -> stopped.
++%%-spec stop() -> stopped.
+ stop() ->
+ 	gen_server:call(?SERVER, stop).
+ 
+ %% @doc Return the current date and time formatted according to RFC-1123.
+--spec rfc1123() -> binary().
++%%-spec rfc1123() -> binary().
+ rfc1123() ->
+ 	ets:lookup_element(?TABLE, rfc1123, 2).
+ 
+ %% @doc Return the given date and time formatted according to RFC-1123.
+--spec rfc1123(calendar:datetime()) -> binary().
++%%-spec rfc1123(calendar:datetime()) -> binary().
+ rfc1123(DateTime) ->
+ 	update_rfc1123(<<>>, undefined, DateTime).
+ 
+@@ -75,7 +75,7 @@ rfc1123(DateTime) ->
+ %%
+ %% This format is used in the <em>set-cookie</em> header sent with
+ %% HTTP responses.
+--spec rfc2109(calendar:datetime()) -> binary().
++%%-spec rfc2109(calendar:datetime()) -> binary().
+ rfc2109({Date = {Y, Mo, D}, {H, Mi, S}}) ->
+ 	Wday = calendar:day_of_the_week(Date),
+ 	<< (weekday(Wday))/binary, ", ", (pad_int(D))/binary, "-",
+@@ -125,8 +125,8 @@ code_change(_OldVsn, State, _Extra) ->
+ 
+ %% Internal.
+ 
+--spec update_rfc1123(binary(), undefined | calendar:datetime(),
+-	calendar:datetime()) -> binary().
++%%-spec update_rfc1123(binary(), undefined | calendar:datetime(),
++%%	calendar:datetime()) -> binary().
+ update_rfc1123(Bin, Now, Now) ->
+ 	Bin;
+ update_rfc1123(<< Keep:23/binary, _/bits >>,
+@@ -159,13 +159,13 @@ update_rfc1123(_, _, {Date = {Y, Mo, D}, {H, M, S}}) ->
+ 		$:, (pad_int(S))/binary, " GMT" >>.
+ 
+ %% Following suggestion by MononcQc on #erlounge.
+--spec pad_int(0..59) -> binary().
++%%-spec pad_int(0..59) -> binary().
+ pad_int(X) when X < 10 ->
+ 	<< $0, ($0 + X) >>;
+ pad_int(X) ->
+ 	list_to_binary(integer_to_list(X)).
+ 
+--spec weekday(1..7) -> <<_:24>>.
++%%-spec weekday(1..7) -> <<_:24>>.
+ weekday(1) -> <<"Mon">>;
+ weekday(2) -> <<"Tue">>;
+ weekday(3) -> <<"Wed">>;
+@@ -174,7 +174,7 @@ weekday(5) -> <<"Fri">>;
+ weekday(6) -> <<"Sat">>;
+ weekday(7) -> <<"Sun">>.
+ 
+--spec month(1..12) -> <<_:24>>.
++%%-spec month(1..12) -> <<_:24>>.
+ month( 1) -> <<"Jan">>;
+ month( 2) -> <<"Feb">>;
+ month( 3) -> <<"Mar">>;
+diff --git a/src/cowboy_handler.erl b/src/cowboy_handler.erl
+index 7ed7db3..f3cb622 100644
+--- a/src/cowboy_handler.erl
++++ b/src/cowboy_handler.erl
+@@ -26,27 +26,27 @@
+ -export([handler_loop/4]).
+ 
+ -record(state, {
+-	env :: cowboy_middleware:env(),
+-	hibernate = false :: boolean(),
+-	loop_timeout = infinity :: timeout(),
+-	loop_timeout_ref :: undefined | reference(),
+-	resp_sent = false :: boolean()
++	env,%% :: cowboy_middleware:env(),
++	hibernate = false,%% :: boolean(),
++	loop_timeout = infinity,%% :: timeout(),
++	loop_timeout_ref,%% :: undefined | reference(),
++	resp_sent = false%% :: boolean()
+ }).
+ 
+ %% @private
+--spec execute(Req, Env)
+-	-> {ok, Req, Env} | {error, 500, Req}
+-	| {suspend, ?MODULE, handler_loop, [any()]}
+-	when Req::cowboy_req:req(), Env::cowboy_middleware:env().
++%%-spec execute(Req, Env)
++	%% -> {ok, Req, Env} | {error, 500, Req}
++	%% | {suspend, ?MODULE, handler_loop, [any()]}
++	%% when Req::cowboy_req:req(), Env::cowboy_middleware:env().
+ execute(Req, Env) ->
+ 	{_, Handler} = lists:keyfind(handler, 1, Env),
+ 	{_, HandlerOpts} = lists:keyfind(handler_opts, 1, Env),
+ 	handler_init(Req, #state{env=Env}, Handler, HandlerOpts).
+ 
+--spec handler_init(Req, #state{}, module(), any())
+-	-> {ok, Req, cowboy_middleware:env()}
+-	| {error, 500, Req} | {suspend, module(), function(), [any()]}
+-	when Req::cowboy_req:req().
++%%-spec handler_init(Req, #state{}, module(), any())
++	%% -> {ok, Req, cowboy_middleware:env()}
++	%% | {error, 500, Req} | {suspend, module(), function(), [any()]}
++	%% when Req::cowboy_req:req().
+ handler_init(Req, State, Handler, HandlerOpts) ->
+ 	Transport = cowboy_req:get(transport, Req),
+ 	try Handler:init({Transport:name(), http}, Req, HandlerOpts) of
+@@ -84,20 +84,20 @@ handler_init(Req, State, Handler, HandlerOpts) ->
+ 		error_terminate(Req, State)
+ 	end.
+ 
+--spec upgrade_protocol(Req, #state{}, module(), any(), module())
+-	-> {ok, Req, Env}
+-	| {suspend, module(), atom(), any()}
+-	| {halt, Req}
+-	| {error, cowboy_http:status(), Req}
+-	when Req::cowboy_req:req(), Env::cowboy_middleware:env().
++%%-spec upgrade_protocol(Req, #state{}, module(), any(), module())
++	%% -> {ok, Req, Env}
++	%% | {suspend, module(), atom(), any()}
++	%% | {halt, Req}
++	%% | {error, cowboy_http:status(), Req}
++	%% when Req::cowboy_req:req(), Env::cowboy_middleware:env().
+ upgrade_protocol(Req, #state{env=Env},
+ 		Handler, HandlerOpts, Module) ->
+ 	Module:upgrade(Req, Env, Handler, HandlerOpts).
+ 
+--spec handler_handle(Req, #state{}, module(), any())
+-	-> {ok, Req, cowboy_middleware:env()}
+-	| {error, 500, Req}
+-	when Req::cowboy_req:req().
++%%-spec handler_handle(Req, #state{}, module(), any())
++	%% -> {ok, Req, cowboy_middleware:env()}
++	%% | {error, 500, Req}
++	%% when Req::cowboy_req:req().
+ handler_handle(Req, State, Handler, HandlerState) ->
+ 	try Handler:handle(Req, HandlerState) of
+ 		{ok, Req2, HandlerState2} ->
+@@ -118,10 +118,10 @@ handler_handle(Req, State, Handler, HandlerState) ->
+ 
+ %% We don't listen for Transport closes because that would force us
+ %% to receive data and buffer it indefinitely.
+--spec handler_before_loop(Req, #state{}, module(), any())
+-	-> {ok, Req, cowboy_middleware:env()}
+-	| {error, 500, Req} | {suspend, module(), function(), [any()]}
+-	when Req::cowboy_req:req().
++%%-spec handler_before_loop(Req, #state{}, module(), any())
++	%% -> {ok, Req, cowboy_middleware:env()}
++	%% | {error, 500, Req} | {suspend, module(), function(), [any()]}
++	%% when Req::cowboy_req:req().
+ handler_before_loop(Req, State=#state{hibernate=true}, Handler, HandlerState) ->
+ 	State2 = handler_loop_timeout(State),
+ 	{suspend, ?MODULE, handler_loop,
+@@ -131,7 +131,7 @@ handler_before_loop(Req, State, Handler, HandlerState) ->
+ 	handler_loop(Req, State2, Handler, HandlerState).
+ 
+ %% Almost the same code can be found in cowboy_websocket.
+--spec handler_loop_timeout(#state{}) -> #state{}.
++%%-spec handler_loop_timeout(#state{}) -> #state{}.
+ handler_loop_timeout(State=#state{loop_timeout=infinity}) ->
+ 	State#state{loop_timeout_ref=undefined};
+ handler_loop_timeout(State=#state{loop_timeout=Timeout,
+@@ -142,10 +142,10 @@ handler_loop_timeout(State=#state{loop_timeout=Timeout,
+ 	State#state{loop_timeout_ref=TRef}.
+ 
+ %% @private
+--spec handler_loop(Req, #state{}, module(), any())
+-	-> {ok, Req, cowboy_middleware:env()}
+-	| {error, 500, Req} | {suspend, module(), function(), [any()]}
+-	when Req::cowboy_req:req().
++%%-spec handler_loop(Req, #state{}, module(), any())
++	%% -> {ok, Req, cowboy_middleware:env()}
++	%% | {error, 500, Req} | {suspend, module(), function(), [any()]}
++	%% when Req::cowboy_req:req().
+ handler_loop(Req, State=#state{loop_timeout_ref=TRef}, Handler, HandlerState) ->
+ 	receive
+ 		{cowboy_req, resp_sent} ->
+@@ -160,10 +160,10 @@ handler_loop(Req, State=#state{loop_timeout_ref=TRef}, Handler, HandlerState) ->
+ 			handler_call(Req, State, Handler, HandlerState, Message)
+ 	end.
+ 
+--spec handler_call(Req, #state{}, module(), any(), any())
+-	-> {ok, Req, cowboy_middleware:env()}
+-	| {error, 500, Req} | {suspend, module(), function(), [any()]}
+-	when Req::cowboy_req:req().
++%%-spec handler_call(Req, #state{}, module(), any(), any())
++	%% -> {ok, Req, cowboy_middleware:env()}
++	%% | {error, 500, Req} | {suspend, module(), function(), [any()]}
++	%% when Req::cowboy_req:req().
+ handler_call(Req, State, Handler, HandlerState, Message) ->
+ 	try Handler:info(Message, Req, HandlerState) of
+ 		{ok, Req2, HandlerState2} ->
+@@ -187,15 +187,15 @@ handler_call(Req, State, Handler, HandlerState, Message) ->
+ 		error_terminate(Req, State)
+ 	end.
+ 
+--spec terminate_request(Req, #state{}, module(), any(),
+-	{normal, timeout | shutdown} | {error, atom()}) ->
+-	{ok, Req, cowboy_middleware:env()} when Req::cowboy_req:req().
++%%-spec terminate_request(Req, #state{}, module(), any(),
++	%% {normal, timeout | shutdown} | {error, atom()}) ->
++	%% {ok, Req, cowboy_middleware:env()} when Req::cowboy_req:req().
+ terminate_request(Req, #state{env=Env}, Handler, HandlerState, Reason) ->
+ 	HandlerRes = handler_terminate(Req, Handler, HandlerState, Reason),
+ 	{ok, Req, [{result, HandlerRes}|Env]}.
+ 
+--spec handler_terminate(cowboy_req:req(), module(), any(),
+-	{normal, timeout | shutdown} | {error, atom()}) -> ok.
++%%-spec handler_terminate(cowboy_req:req(), module(), any(),
++	%% {normal, timeout | shutdown} | {error, atom()}) -> ok.
+ handler_terminate(Req, Handler, HandlerState, Reason) ->
+ 	try
+ 		Handler:terminate(Reason, cowboy_req:lock(Req), HandlerState)
+@@ -211,8 +211,8 @@ handler_terminate(Req, Handler, HandlerState, Reason) ->
+ 	end.
+ 
+ %% Only send an error reply if there is no resp_sent message.
+--spec error_terminate(Req, #state{})
+-	-> {error, 500, Req} | {halt, Req} when Req::cowboy_req:req().
++%%-spec error_terminate(Req, #state{})
++	%% -> {error, 500, Req} | {halt, Req} when Req::cowboy_req:req().
+ error_terminate(Req, #state{resp_sent=true}) ->
+ 	%% Close the connection, but do not attempt sending a reply.
+ 	{halt, cowboy_req:set([{connection, close}, {resp_state, done}], Req)};
+diff --git a/src/cowboy_http.erl b/src/cowboy_http.erl
+index f3ff687..650bf60 100644
+--- a/src/cowboy_http.erl
++++ b/src/cowboy_http.erl
+@@ -52,13 +52,13 @@
+ -export([urlencode/2]).
+ -export([x_www_form_urlencoded/1]).
+ 
+--type version() :: {Major::non_neg_integer(), Minor::non_neg_integer()}.
+--type headers() :: [{binary(), iodata()}].
+--type status() :: non_neg_integer() | binary().
++%% -type version() :: {Major::non_neg_integer(), Minor::non_neg_integer()}.
++%% -type headers() :: [{binary(), iodata()}].
++%% -type status() :: non_neg_integer() | binary().
+ 
+--export_type([version/0]).
+--export_type([headers/0]).
+--export_type([status/0]).
++%% -export_type([version/0]).
++%% -export_type([headers/0]).
++%% -export_type([status/0]).
+ 
+ -ifdef(TEST).
+ -include_lib("eunit/include/eunit.hrl").
+@@ -67,7 +67,7 @@
+ %% Parsing.
+ 
+ %% @doc Parse a non-empty list of the given type.
+--spec nonempty_list(binary(), fun()) -> [any(), ...] | {error, badarg}.
++%%-spec nonempty_list(binary(), fun()) -> [any(), ...] | {error, badarg}.
+ nonempty_list(Data, Fun) ->
+ 	case list(Data, Fun, []) of
+ 		{error, badarg} -> {error, badarg};
+@@ -76,14 +76,14 @@ nonempty_list(Data, Fun) ->
+ 	end.
+ 
+ %% @doc Parse a list of the given type.
+--spec list(binary(), fun()) -> list() | {error, badarg}.
++%%-spec list(binary(), fun()) -> list() | {error, badarg}.
+ list(Data, Fun) ->
+ 	case list(Data, Fun, []) of
+ 		{error, badarg} -> {error, badarg};
+ 		L -> lists:reverse(L)
+ 	end.
+ 
+--spec list(binary(), fun(), [binary()]) -> [any()] | {error, badarg}.
++%%-spec list(binary(), fun(), [binary()]) -> [any()] | {error, badarg}.
+ %% From the RFC:
+ %% <blockquote>Wherever this construct is used, null elements are allowed,
+ %% but do not contribute to the count of elements present.
+@@ -107,7 +107,7 @@ list(Data, Fun, Acc) ->
+ %%
+ %% We need a special function for this because we need to support both
+ %% $; and $, as separators as per RFC2109.
+--spec cookie_list(binary()) -> [{binary(), binary()}] | {error, badarg}.
++%%-spec cookie_list(binary()) -> [{binary(), binary()}] | {error, badarg}.
+ cookie_list(Data) ->
+ 	case cookie_list(Data, []) of
+ 		{error, badarg} -> {error, badarg};
+@@ -115,8 +115,8 @@ cookie_list(Data) ->
+ 		L -> lists:reverse(L)
+ 	end.
+ 
+--spec cookie_list(binary(), Acc) -> Acc | {error, badarg}
+-	when Acc::[{binary(), binary()}].
++%%-spec cookie_list(binary(), Acc) -> Acc | {error, badarg}
++%%	when Acc::[{binary(), binary()}].
+ cookie_list(Data, Acc) ->
+ 	whitespace(Data,
+ 		fun (<<>>) -> Acc;
+@@ -130,7 +130,7 @@ cookie_list(Data, Acc) ->
+ 				end)
+ 		end).
+ 
+--spec cookie(binary(), fun()) -> any().
++%%-spec cookie(binary(), fun()) -> any().
+ cookie(Data, Fun) ->
+ 	whitespace(Data,
+ 		fun (Rest) ->
+@@ -145,11 +145,11 @@ cookie(Data, Fun) ->
+ 					end)
+ 		end).
+ 
+--spec cookie_name(binary(), fun()) -> any().
++%%-spec cookie_name(binary(), fun()) -> any().
+ cookie_name(Data, Fun) ->
+ 	cookie_name(Data, Fun, <<>>).
+ 
+--spec cookie_name(binary(), fun(), binary()) -> any().
++%%-spec cookie_name(binary(), fun(), binary()) -> any().
+ cookie_name(<<>>, Fun, Acc) ->
+ 	Fun(<<>>, Acc);
+ cookie_name(Data = << C, _Rest/binary >>, Fun, Acc)
+@@ -160,11 +160,11 @@ cookie_name(<< C, Rest/binary >>, Fun, Acc) ->
+ 	C2 = cowboy_bstr:char_to_lower(C),
+ 	cookie_name(Rest, Fun, << Acc/binary, C2 >>).
+ 
+--spec cookie_value(binary(), fun()) -> any().
++%%-spec cookie_value(binary(), fun()) -> any().
+ cookie_value(Data, Fun) ->
+ 	cookie_value(Data, Fun, <<>>).
+ 
+--spec cookie_value(binary(), fun(), binary()) -> any().
++%%-spec cookie_value(binary(), fun(), binary()) -> any().
+ cookie_value(<<>>, Fun, Acc) ->
+ 	Fun(<<>>, Acc);
+ cookie_value(Data = << C, _Rest/binary >>, Fun, Acc)
+@@ -175,7 +175,7 @@ cookie_value(<< C, Rest/binary >>, Fun, Acc) ->
+ 	cookie_value(Rest, Fun, << Acc/binary, C >>).
+ 
+ %% @doc Parse a content type.
+--spec content_type(binary()) -> any().
++%%-spec content_type(binary()) -> any().
+ content_type(Data) ->
+ 	media_type(Data,
+ 		fun (Rest, Type, SubType) ->
+@@ -186,15 +186,15 @@ content_type(Data) ->
+ 		end).
+ 
+ %% @doc Parse a media range.
+--spec media_range(binary(), fun()) -> any().
++%%-spec media_range(binary(), fun()) -> any().
+ media_range(Data, Fun) ->
+ 	media_type(Data,
+ 		fun (Rest, Type, SubType) ->
+ 			media_range_params(Rest, Fun, Type, SubType, [])
+ 		end).
+ 
+--spec media_range_params(binary(), fun(), binary(), binary(),
+-	[{binary(), binary()}]) -> any().
++%%-spec media_range_params(binary(), fun(), binary(), binary(),
++%%	[{binary(), binary()}]) -> any().
+ media_range_params(Data, Fun, Type, SubType, Acc) ->
+ 	whitespace(Data,
+ 		fun (<< $;, Rest/binary >>) ->
+@@ -205,8 +205,8 @@ media_range_params(Data, Fun, Type, SubType, Acc) ->
+ 			(Rest) -> Fun(Rest, {{Type, SubType, lists:reverse(Acc)}, 1000, []})
+ 		end).
+ 
+--spec media_range_param_attr(binary(), fun(), binary(), binary(),
+-	[{binary(), binary()}]) -> any().
++%%-spec media_range_param_attr(binary(), fun(), binary(), binary(),
++%%	[{binary(), binary()}]) -> any().
+ media_range_param_attr(Data, Fun, Type, SubType, Acc) ->
+ 	token_ci(Data,
+ 		fun (_Rest, <<>>) -> {error, badarg};
+@@ -214,8 +214,8 @@ media_range_param_attr(Data, Fun, Type, SubType, Acc) ->
+ 				media_range_param_value(Rest, Fun, Type, SubType, Acc, Attr)
+ 		end).
+ 
+--spec media_range_param_value(binary(), fun(), binary(), binary(),
+-	[{binary(), binary()}], binary()) -> any().
++%%-spec media_range_param_value(binary(), fun(), binary(), binary(),
++%%	[{binary(), binary()}], binary()) -> any().
+ media_range_param_value(Data, Fun, Type, SubType, Acc, <<"q">>) ->
+ 	qvalue(Data,
+ 		fun (Rest, Quality) ->
+@@ -229,7 +229,7 @@ media_range_param_value(Data, Fun, Type, SubType, Acc, Attr) ->
+ 		end).
+ 
+ %% @doc Parse a media type.
+--spec media_type(binary(), fun()) -> any().
++%%-spec media_type(binary(), fun()) -> any().
+ media_type(Data, Fun) ->
+ 	token_ci(Data,
+ 		fun (_Rest, <<>>) -> {error, badarg};
+@@ -248,9 +248,9 @@ media_type(Data, Fun) ->
+ 			(_Rest, _Type) -> {error, badarg}
+ 		end).
+ 
+--spec accept_ext(binary(), fun(), binary(), binary(),
+-	[{binary(), binary()}], 0..1000,
+-	[{binary(), binary()} | binary()]) -> any().
++%%-spec accept_ext(binary(), fun(), binary(), binary(),
++%%	[{binary(), binary()}], 0..1000,
++%%	[{binary(), binary()} | binary()]) -> any().
+ accept_ext(Data, Fun, Type, SubType, Params, Quality, Acc) ->
+ 	whitespace(Data,
+ 		fun (<< $;, Rest/binary >>) ->
+@@ -264,9 +264,9 @@ accept_ext(Data, Fun, Type, SubType, Params, Quality, Acc) ->
+ 					Quality, lists:reverse(Acc)})
+ 		end).
+ 
+--spec accept_ext_attr(binary(), fun(), binary(), binary(),
+-	[{binary(), binary()}], 0..1000,
+-	[{binary(), binary()} | binary()]) -> any().
++%%-spec accept_ext_attr(binary(), fun(), binary(), binary(),
++%%	[{binary(), binary()}], 0..1000,
++%%	[{binary(), binary()} | binary()]) -> any().
+ accept_ext_attr(Data, Fun, Type, SubType, Params, Quality, Acc) ->
+ 	token_ci(Data,
+ 		fun (_Rest, <<>>) -> {error, badarg};
+@@ -278,9 +278,9 @@ accept_ext_attr(Data, Fun, Type, SubType, Params, Quality, Acc) ->
+ 					Quality, [Attr|Acc])
+ 		end).
+ 
+--spec accept_ext_value(binary(), fun(), binary(), binary(),
+-	[{binary(), binary()}], 0..1000,
+-	[{binary(), binary()} | binary()], binary()) -> any().
++%%-spec accept_ext_value(binary(), fun(), binary(), binary(),
++%%	[{binary(), binary()}], 0..1000,
++%%	[{binary(), binary()} | binary()], binary()) -> any().
+ accept_ext_value(Data, Fun, Type, SubType, Params, Quality, Acc, Attr) ->
+ 	word(Data,
+ 		fun (Rest, Value) ->
+@@ -290,7 +290,7 @@ accept_ext_value(Data, Fun, Type, SubType, Params, Quality, Acc, Attr) ->
+ 
+ %% @doc Parse a conneg header (Accept-Charset, Accept-Encoding),
+ %% followed by an optional quality value.
+--spec conneg(binary(), fun()) -> any().
++%%-spec conneg(binary(), fun()) -> any().
+ conneg(Data, Fun) ->
+ 	token_ci(Data,
+ 		fun (_Rest, <<>>) -> {error, badarg};
+@@ -302,7 +302,7 @@ conneg(Data, Fun) ->
+ 		end).
+ 
+ %% @doc Parse a language range, followed by an optional quality value.
+--spec language_range(binary(), fun()) -> any().
++%%-spec language_range(binary(), fun()) -> any().
+ language_range(<< $*, Rest/binary >>, Fun) ->
+ 	language_range_ret(Rest, Fun, '*');
+ language_range(Data, Fun) ->
+@@ -311,14 +311,14 @@ language_range(Data, Fun) ->
+ 				language_range_ret(Rest, Fun, LanguageTag)
+ 		end).
+ 
+--spec language_range_ret(binary(), fun(), '*' | {binary(), [binary()]}) -> any().
++%%-spec language_range_ret(binary(), fun(), '*' | {binary(), [binary()]}) -> any().
+ language_range_ret(Data, Fun, LanguageTag) ->
+ 	maybe_qparam(Data,
+ 		fun (Rest, Quality) ->
+ 				Fun(Rest, {LanguageTag, Quality})
+ 		end).
+ 
+--spec language_tag(binary(), fun()) -> any().
++%%-spec language_tag(binary(), fun()) -> any().
+ language_tag(Data, Fun) ->
+ 	alpha(Data,
+ 		fun (_Rest, Tag) when byte_size(Tag) =:= 0; byte_size(Tag) > 8 ->
+@@ -329,7 +329,7 @@ language_tag(Data, Fun) ->
+ 				Fun(Rest, Tag)
+ 		end).
+ 
+--spec language_subtag(binary(), fun(), binary(), [binary()]) -> any().
++%%-spec language_subtag(binary(), fun(), binary(), [binary()]) -> any().
+ language_subtag(Data, Fun, Tag, Acc) ->
+ 	alpha(Data,
+ 		fun (_Rest, SubTag) when byte_size(SubTag) =:= 0;
+@@ -342,7 +342,7 @@ language_subtag(Data, Fun, Tag, Acc) ->
+ 				Fun(Rest, << Tag/binary, Sub/binary >>)
+ 		end).
+ 
+--spec maybe_qparam(binary(), fun()) -> any().
++%%-spec maybe_qparam(binary(), fun()) -> any().
+ maybe_qparam(Data, Fun) ->
+ 	whitespace(Data,
+ 		fun (<< $;, Rest/binary >>) ->
+@@ -363,12 +363,12 @@ maybe_qparam(Data, Fun) ->
+ 		end).
+ 
+ %% @doc Parse a quality parameter string (for example q=0.500).
+--spec qparam(binary(), fun()) -> any().
++%%-spec qparam(binary(), fun()) -> any().
+ qparam(<< Q, $=, Data/binary >>, Fun) when Q =:= $q; Q =:= $Q ->
+ 	qvalue(Data, Fun).
+ 
+ %% @doc Parse either a list of entity tags or a "*".
+--spec entity_tag_match(binary()) -> any().
++%%-spec entity_tag_match(binary()) -> any().
+ entity_tag_match(<< $*, Rest/binary >>) ->
+ 	whitespace(Rest,
+ 		fun (<<>>) -> '*';
+@@ -378,13 +378,13 @@ entity_tag_match(Data) ->
+ 	nonempty_list(Data, fun entity_tag/2).
+ 
+ %% @doc Parse an entity-tag.
+--spec entity_tag(binary(), fun()) -> any().
++%%-spec entity_tag(binary(), fun()) -> any().
+ entity_tag(<< "W/", Rest/binary >>, Fun) ->
+ 	opaque_tag(Rest, Fun, weak);
+ entity_tag(Data, Fun) ->
+ 	opaque_tag(Data, Fun, strong).
+ 
+--spec opaque_tag(binary(), fun(), weak | strong) -> any().
++%%-spec opaque_tag(binary(), fun(), weak | strong) -> any().
+ opaque_tag(Data, Fun, Strength) ->
+ 	quoted_string(Data,
+ 		fun (_Rest, <<>>) -> {error, badarg};
+@@ -392,7 +392,7 @@ opaque_tag(Data, Fun, Strength) ->
+ 		end).
+ 
+ %% @doc Parse an expectation.
+--spec expectation(binary(), fun()) -> any().
++%%-spec expectation(binary(), fun()) -> any().
+ expectation(Data, Fun) ->
+ 	token_ci(Data,
+ 		fun (_Rest, <<>>) -> {error, badarg};
+@@ -408,11 +408,11 @@ expectation(Data, Fun) ->
+ 		end).
+ 
+ %% @doc Parse a list of parameters (a=b;c=d).
+--spec params(binary(), fun()) -> any().
++%%-spec params(binary(), fun()) -> any().
+ params(Data, Fun) ->
+ 	params(Data, Fun, []).
+ 
+--spec params(binary(), fun(), [{binary(), binary()}]) -> any().
++%%-spec params(binary(), fun(), [{binary(), binary()}]) -> any().
+ params(Data, Fun, Acc) ->
+ 	whitespace(Data,
+ 		fun (<< $;, Rest/binary >>) ->
+@@ -424,7 +424,7 @@ params(Data, Fun, Acc) ->
+ 				Fun(Rest, lists:reverse(Acc))
+ 		end).
+ 
+--spec param(binary(), fun()) -> any().
++%%-spec param(binary(), fun()) -> any().
+ param(Data, Fun) ->
+ 	whitespace(Data,
+ 		fun (Rest) ->
+@@ -445,7 +445,7 @@ param(Data, Fun) ->
+ %% While this may not be the most efficient date parsing we can do,
+ %% it should work fine for our purposes because all HTTP dates should
+ %% be sent as RFC1123 dates in HTTP/1.1.
+--spec http_date(binary()) -> any().
++%%-spec http_date(binary()) -> any().
+ http_date(Data) ->
+ 	case rfc1123_date(Data) of
+ 		{error, badarg} ->
+@@ -465,7 +465,7 @@ http_date(Data) ->
+ 	end.
+ 
+ %% @doc Parse an RFC1123 date.
+--spec rfc1123_date(binary()) -> any().
++%%-spec rfc1123_date(binary()) -> any().
+ rfc1123_date(Data) ->
+ 	wkday(Data,
+ 		fun (<< ", ", Rest/binary >>, _WkDay) ->
+@@ -485,7 +485,7 @@ rfc1123_date(Data) ->
+ 		end).
+ 
+ %% @doc Parse an RFC850 date.
+--spec rfc850_date(binary()) -> any().
++%%-spec rfc850_date(binary()) -> any().
+ %% From the RFC:
+ %% HTTP/1.1 clients and caches SHOULD assume that an RFC-850 date
+ %% which appears to be more than 50 years in the future is in fact
+@@ -509,7 +509,7 @@ rfc850_date(Data) ->
+ 		end).
+ 
+ %% @doc Parse an asctime date.
+--spec asctime_date(binary()) -> any().
++%%-spec asctime_date(binary()) -> any().
+ asctime_date(Data) ->
+ 	wkday(Data,
+ 		fun (<< " ", Rest/binary >>, _WkDay) ->
+@@ -529,14 +529,14 @@ asctime_date(Data) ->
+ 				{error, badarg1}
+ 		end).
+ 
+--spec asctime_year(binary(), tuple(), tuple()) -> any().
++%%-spec asctime_year(binary(), tuple(), tuple()) -> any().
+ asctime_year(<< Y1, Y2, Y3, Y4, Rest/binary >>, {Month, Day}, Time)
+ 		when Y1 >= $0, Y1 =< $9, Y2 >= $0, Y2 =< $9,
+ 			 Y3 >= $0, Y3 =< $9, Y4 >= $0, Y4 =< $9 ->
+ 	Year = (Y1 - $0) * 1000 + (Y2 - $0) * 100 + (Y3 - $0) * 10 + (Y4 - $0),
+ 	http_date_ret(Rest, {{Year, Month, Day}, Time}).
+ 
+--spec http_date_ret(binary(), tuple()) -> any().
++%%-spec http_date_ret(binary(), tuple()) -> any().
+ http_date_ret(Data, DateTime = {Date, _Time}) ->
+ 	whitespace(Data,
+ 		fun (<<>>) ->
+@@ -549,7 +549,7 @@ http_date_ret(Data, DateTime = {Date, _Time}) ->
+ 		end).
+ 
+ %% We never use it, pretty much just checks the wkday is right.
+--spec wkday(binary(), fun()) -> any().
++%%-spec wkday(binary(), fun()) -> any().
+ wkday(<< WkDay:3/binary, Rest/binary >>, Fun)
+ 		when WkDay =:= <<"Mon">>; WkDay =:= <<"Tue">>; WkDay =:= <<"Wed">>;
+ 			 WkDay =:= <<"Thu">>; WkDay =:= <<"Fri">>; WkDay =:= <<"Sat">>;
+@@ -559,7 +559,7 @@ wkday(_Any, _Fun) ->
+ 	{error, badarg}.
+ 
+ %% We never use it, pretty much just checks the weekday is right.
+--spec weekday(binary(), fun()) -> any().
++%%-spec weekday(binary(), fun()) -> any().
+ weekday(<< "Monday", Rest/binary >>, Fun) ->
+ 	Fun(Rest, <<"Monday">>);
+ weekday(<< "Tuesday", Rest/binary >>, Fun) ->
+@@ -577,7 +577,7 @@ weekday(<< "Sunday", Rest/binary >>, Fun) ->
+ weekday(_Any, _Fun) ->
+ 	{error, badarg}.
+ 
+--spec date1(binary(), fun()) -> any().
++%%-spec date1(binary(), fun()) -> any().
+ date1(<< D1, D2, " ", M:3/binary, " ", Y1, Y2, Y3, Y4, Rest/binary >>, Fun)
+ 		when D1 >= $0, D1 =< $9, D2 >= $0, D2 =< $9,
+ 			 Y1 >= $0, Y1 =< $9, Y2 >= $0, Y2 =< $9,
+@@ -595,7 +595,7 @@ date1(<< D1, D2, " ", M:3/binary, " ", Y1, Y2, Y3, Y4, Rest/binary >>, Fun)
+ date1(_Data, _Fun) ->
+ 	{error, badarg}.
+ 
+--spec date2(binary(), fun()) -> any().
++%%-spec date2(binary(), fun()) -> any().
+ date2(<< D1, D2, "-", M:3/binary, "-", Y1, Y2, Rest/binary >>, Fun)
+ 		when D1 >= $0, D1 =< $9, D2 >= $0, D2 =< $9,
+ 			 Y1 >= $0, Y1 =< $9, Y2 >= $0, Y2 =< $9 ->
+@@ -617,7 +617,7 @@ date2(<< D1, D2, "-", M:3/binary, "-", Y1, Y2, Rest/binary >>, Fun)
+ date2(_Data, _Fun) ->
+ 	{error, badarg}.
+ 
+--spec date3(binary(), fun()) -> any().
++%%-spec date3(binary(), fun()) -> any().
+ date3(<< M:3/binary, " ", D1, D2, Rest/binary >>, Fun)
+ 		when (D1 >= $0 andalso D1 =< $3) orelse D1 =:= $\s,
+ 			 D2 >= $0, D2 =< $9 ->
+@@ -634,7 +634,7 @@ date3(<< M:3/binary, " ", D1, D2, Rest/binary >>, Fun)
+ date3(_Data, _Fun) ->
+ 	{error, badarg}.
+ 
+--spec month(<< _:24 >>) -> 1..12 | {error, badarg}.
++%%-spec month(<< _:24 >>) -> 1..12 | {error, badarg}.
+ month(<<"Jan">>) -> 1;
+ month(<<"Feb">>) -> 2;
+ month(<<"Mar">>) -> 3;
+@@ -649,7 +649,7 @@ month(<<"Nov">>) -> 11;
+ month(<<"Dec">>) -> 12;
+ month(_Any) -> {error, badarg}.
+ 
+--spec time(binary(), fun()) -> any().
++%%-spec time(binary(), fun()) -> any().
+ time(<< H1, H2, ":", M1, M2, ":", S1, S2, Rest/binary >>, Fun)
+ 		when H1 >= $0, H1 =< $2, H2 >= $0, H2 =< $9,
+ 			 M1 >= $0, M1 =< $5, M2 >= $0, M2 =< $9,
+@@ -668,7 +668,7 @@ time(<< H1, H2, ":", M1, M2, ":", S1, S2, Rest/binary >>, Fun)
+ 	end.
+ 
+ %% @doc Skip whitespace.
+--spec whitespace(binary(), fun()) -> any().
++%%-spec whitespace(binary(), fun()) -> any().
+ whitespace(<< C, Rest/binary >>, Fun)
+ 		when C =:= $\s; C =:= $\t ->
+ 	whitespace(Rest, Fun);
+@@ -676,7 +676,7 @@ whitespace(Data, Fun) ->
+ 	Fun(Data).
+ 
+ %% @doc Parse a list of digits as a non negative integer.
+--spec digits(binary()) -> non_neg_integer() | {error, badarg}.
++%%-spec digits(binary()) -> non_neg_integer() | {error, badarg}.
+ digits(Data) ->
+ 	digits(Data,
+ 		fun (Rest, I) ->
+@@ -688,14 +688,14 @@ digits(Data) ->
+ 				end)
+ 		end).
+ 
+--spec digits(binary(), fun()) -> any().
++%%-spec digits(binary(), fun()) -> any().
+ digits(<< C, Rest/binary >>, Fun)
+ 		when C >= $0, C =< $9 ->
+ 	digits(Rest, Fun, C - $0);
+ digits(_Data, _Fun) ->
+ 	{error, badarg}.
+ 
+--spec digits(binary(), fun(), non_neg_integer()) -> any().
++%%-spec digits(binary(), fun(), non_neg_integer()) -> any().
+ digits(<< C, Rest/binary >>, Fun, Acc)
+ 		when C >= $0, C =< $9 ->
+ 	digits(Rest, Fun, Acc * 10 + (C - $0));
+@@ -705,11 +705,11 @@ digits(Data, Fun, Acc) ->
+ %% @doc Parse a list of case-insensitive alpha characters.
+ %%
+ %% Changes all characters to lowercase.
+--spec alpha(binary(), fun()) -> any().
++%%-spec alpha(binary(), fun()) -> any().
+ alpha(Data, Fun) ->
+ 	alpha(Data, Fun, <<>>).
+ 
+--spec alpha(binary(), fun(), binary()) -> any().
++%%-spec alpha(binary(), fun(), binary()) -> any().
+ alpha(<<>>, Fun, Acc) ->
+ 	Fun(<<>>, Acc);
+ alpha(<< C, Rest/binary >>, Fun, Acc)
+@@ -721,7 +721,7 @@ alpha(Data, Fun, Acc) ->
+ 	Fun(Data, Acc).
+ 
+ %% @doc Parse either a token or a quoted string.
+--spec word(binary(), fun()) -> any().
++%%-spec word(binary(), fun()) -> any().
+ word(Data = << $", _/binary >>, Fun) ->
+ 	quoted_string(Data, Fun);
+ word(Data, Fun) ->
+@@ -733,16 +733,16 @@ word(Data, Fun) ->
+ %% @doc Parse a case-insensitive token.
+ %%
+ %% Changes all characters to lowercase.
+--spec token_ci(binary(), fun()) -> any().
++%%-spec token_ci(binary(), fun()) -> any().
+ token_ci(Data, Fun) ->
+ 	token(Data, Fun, ci, <<>>).
+ 
+ %% @doc Parse a token.
+--spec token(binary(), fun()) -> any().
++%%-spec token(binary(), fun()) -> any().
+ token(Data, Fun) ->
+ 	token(Data, Fun, cs, <<>>).
+ 
+--spec token(binary(), fun(), ci | cs, binary()) -> any().
++%%-spec token(binary(), fun(), ci | cs, binary()) -> any().
+ token(<<>>, Fun, _Case, Acc) ->
+ 	Fun(<<>>, Acc);
+ token(Data = << C, _Rest/binary >>, Fun, _Case, Acc)
+@@ -759,11 +759,11 @@ token(<< C, Rest/binary >>, Fun, Case, Acc) ->
+ 	token(Rest, Fun, Case, << Acc/binary, C >>).
+ 
+ %% @doc Parse a quoted string.
+--spec quoted_string(binary(), fun()) -> any().
++%%-spec quoted_string(binary(), fun()) -> any().
+ quoted_string(<< $", Rest/binary >>, Fun) ->
+ 	quoted_string(Rest, Fun, <<>>).
+ 
+--spec quoted_string(binary(), fun(), binary()) -> any().
++%%-spec quoted_string(binary(), fun(), binary()) -> any().
+ quoted_string(<<>>, _Fun, _Acc) ->
+ 	{error, badarg};
+ quoted_string(<< $", Rest/binary >>, Fun, Acc) ->
+@@ -774,7 +774,7 @@ quoted_string(<< C, Rest/binary >>, Fun, Acc) ->
+ 	quoted_string(Rest, Fun, << Acc/binary, C >>).
+ 
+ %% @doc Parse a quality value.
+--spec qvalue(binary(), fun()) -> any().
++%%-spec qvalue(binary(), fun()) -> any().
+ qvalue(<< $0, $., Rest/binary >>, Fun) ->
+ 	qvalue(Rest, Fun, 0, 100);
+ %% Some user agents use q=.x instead of q=0.x
+@@ -793,7 +793,7 @@ qvalue(<< $1, Rest/binary >>, Fun) ->
+ qvalue(_Data, _Fun) ->
+ 	{error, badarg}.
+ 
+--spec qvalue(binary(), fun(), integer(), 1 | 10 | 100) -> any().
++%%-spec qvalue(binary(), fun(), integer(), 1 | 10 | 100) -> any().
+ qvalue(Data, Fun, Q, 0) ->
+ 	Fun(Data, Q);
+ qvalue(<< C, Rest/binary >>, Fun, Q, M)
+@@ -804,7 +804,7 @@ qvalue(Data, Fun, Q, _M) ->
+ 
+ %% @doc Parse authorization value according rfc 2617.
+ %% Only Basic authorization is supported so far.
+--spec authorization(binary(), binary()) -> {binary(), any()} | {error, badarg}.
++%%-spec authorization(binary(), binary()) -> {binary(), any()} | {error, badarg}.
+ authorization(UserPass, Type = <<"basic">>) ->
+ 	cowboy_http:whitespace(UserPass,
+ 		fun(D) ->
+@@ -820,7 +820,7 @@ authorization(String, Type) ->
+ 	cowboy_http:whitespace(String, fun(Rest) -> {Type, Rest} end).
+ 
+ %% @doc Parse user credentials.
+--spec authorization_basic_userid(binary(), fun()) -> any().
++%%-spec authorization_basic_userid(binary(), fun()) -> any().
+ authorization_basic_userid(Data, Fun) ->
+ 	authorization_basic_userid(Data, Fun, <<>>).
+ 
+@@ -834,7 +834,7 @@ authorization_basic_userid(<<$:, Rest/binary>>, Fun, Acc) ->
+ authorization_basic_userid(<<C, Rest/binary>>, Fun, Acc) ->
+ 	authorization_basic_userid(Rest, Fun, <<Acc/binary, C>>).
+ 
+--spec authorization_basic_password(binary(), fun()) -> any().
++%%-spec authorization_basic_password(binary(), fun()) -> any().
+ authorization_basic_password(Data, Fun) ->
+ 	authorization_basic_password(Data, Fun, <<>>).
+ 
+@@ -851,11 +851,11 @@ authorization_basic_password(<<C, Rest/binary>>, Fun, Acc) ->
+ %% Decoding.
+ 
+ %% @doc Decode a stream of chunks.
+--spec te_chunked(Bin, TransferState)
+-	-> more | {more, non_neg_integer(), Bin, TransferState}
+-	| {ok, Bin, TransferState} | {ok, Bin, Bin, TransferState}
+-	| {done, non_neg_integer(), Bin} | {error, badarg}
+-	when Bin::binary(), TransferState::{non_neg_integer(), non_neg_integer()}.
++%%-spec te_chunked(Bin, TransferState)
++	%% -> more | {more, non_neg_integer(), Bin, TransferState}
++	%% | {ok, Bin, TransferState} | {ok, Bin, Bin, TransferState}
++	%% | {done, non_neg_integer(), Bin} | {error, badarg}
++	%% when Bin::binary(), TransferState::{non_neg_integer(), non_neg_integer()}.
+ te_chunked(<< "0\r\n\r\n", Rest/binary >>, {0, Streamed}) ->
+ 	{done, Streamed, Rest};
+ te_chunked(Data, {0, Streamed}) ->
+@@ -878,9 +878,9 @@ te_chunked(Data, {ChunkRem, Streamed}) ->
+ 	{more, ChunkRem + 2, Data, {ChunkRem, Streamed}}.
+ 
+ %% @doc Decode an identity stream.
+--spec te_identity(Bin, TransferState)
+-	-> {ok, Bin, TransferState} | {done, Bin, non_neg_integer(), Bin}
+-	when Bin::binary(), TransferState::{non_neg_integer(), non_neg_integer()}.
++%%-spec te_identity(Bin, TransferState)
++	%% -> {ok, Bin, TransferState} | {done, Bin, non_neg_integer(), Bin}
++	%% when Bin::binary(), TransferState::{non_neg_integer(), non_neg_integer()}.
+ te_identity(Data, {Streamed, Total})
+ 		when Streamed + byte_size(Data) < Total ->
+ 	{ok, Data, {Streamed + byte_size(Data), Total}};
+@@ -890,7 +890,7 @@ te_identity(Data, {Streamed, Total}) ->
+ 	{done, Data2, Total, Rest}.
+ 
+ %% @doc Decode an identity content.
+--spec ce_identity(binary()) -> {ok, binary()}.
++%%-spec ce_identity(binary()) -> {ok, binary()}.
+ ce_identity(Data) ->
+ 	{ok, Data}.
+ 
+@@ -903,8 +903,8 @@ ce_identity(Data) ->
+ %%   * Copyright 2007 Mochi Media, Inc.
+ %% Initial binary implementation:
+ %%   * Copyright 2011 Thomas Burdick <thomas.burdick@gmail.com>
+--spec cookie_to_iodata(iodata(), iodata(), cowboy_req:cookie_opts())
+-	-> iodata().
++%%-spec cookie_to_iodata(iodata(), iodata(), cowboy_req:cookie_opts())
++%%	-> iodata().
+ cookie_to_iodata(Name, Value, Opts) ->
+ 	case binary:match(iolist_to_binary(Name), [<<$=>>, <<$,>>, <<$;>>,
+ 			<<$\s>>, <<$\t>>, <<$\r>>, <<$\n>>, <<$\013>>, <<$\014>>]) of
+@@ -946,13 +946,13 @@ cookie_to_iodata(Name, Value, Opts) ->
+ 		MaxAgeBin, DomainBin, PathBin, SecureBin, HttpOnlyBin].
+ 
+ %% @doc Convert an HTTP version tuple to its binary form.
+--spec version_to_binary(version()) -> binary().
++%%-spec version_to_binary(version()) -> binary().
+ version_to_binary({1, 1}) -> <<"HTTP/1.1">>;
+ version_to_binary({1, 0}) -> <<"HTTP/1.0">>.
+ 
+ %% @doc Decode a URL encoded binary.
+ %% @equiv urldecode(Bin, crash)
+--spec urldecode(binary()) -> binary().
++%%-spec urldecode(binary()) -> binary().
+ urldecode(Bin) when is_binary(Bin) ->
+ 	urldecode(Bin, <<>>, crash).
+ 
+@@ -960,11 +960,11 @@ urldecode(Bin) when is_binary(Bin) ->
+ %% The second argument specifies how to handle percent characters that are not
+ %% followed by two valid hex characters. Use `skip' to ignore such errors,
+ %% if `crash' is used the function will fail with the reason `badarg'.
+--spec urldecode(binary(), crash | skip) -> binary().
++%%-spec urldecode(binary(), crash | skip) -> binary().
+ urldecode(Bin, OnError) when is_binary(Bin) ->
+ 	urldecode(Bin, <<>>, OnError).
+ 
+--spec urldecode(binary(), binary(), crash | skip) -> binary().
++%%-spec urldecode(binary(), binary(), crash | skip) -> binary().
+ urldecode(<<$%, H, L, Rest/binary>>, Acc, OnError) ->
+ 	G = unhex(H),
+ 	M = unhex(L),
+@@ -984,7 +984,7 @@ urldecode(<<C, Rest/binary>>, Acc, OnError) ->
+ urldecode(<<>>, Acc, _OnError) ->
+ 	Acc.
+ 
+--spec unhex(byte()) -> byte() | error.
++%%-spec unhex(byte()) -> byte() | error.
+ unhex(C) when C >= $0, C =< $9 -> C - $0;
+ unhex(C) when C >= $A, C =< $F -> C - $A + 10;
+ unhex(C) when C >= $a, C =< $f -> C - $a + 10;
+@@ -993,7 +993,7 @@ unhex(_) -> error.
+ 
+ %% @doc URL encode a string binary.
+ %% @equiv urlencode(Bin, [])
+--spec urlencode(binary()) -> binary().
++%%-spec urlencode(binary()) -> binary().
+ urlencode(Bin) ->
+ 	urlencode(Bin, []).
+ 
+@@ -1002,13 +1002,13 @@ urlencode(Bin) ->
+ %% characters, `\s', as `+'. The `upper' option overrides the default behaviour
+ %% of writing hex numbers using lowecase letters to using uppercase letters
+ %% instead.
+--spec urlencode(binary(), [noplus|upper]) -> binary().
++%%-spec urlencode(binary(), [noplus|upper]) -> binary().
+ urlencode(Bin, Opts) ->
+ 	Plus = not lists:member(noplus, Opts),
+ 	Upper = lists:member(upper, Opts),
+ 	urlencode(Bin, <<>>, Plus, Upper).
+ 
+--spec urlencode(binary(), binary(), boolean(), boolean()) -> binary().
++%%-spec urlencode(binary(), binary(), boolean(), boolean()) -> binary().
+ urlencode(<<C, Rest/binary>>, Acc, P=Plus, U=Upper) ->
+ 	if	C >= $0, C =< $9 -> urlencode(Rest, <<Acc/binary, C>>, P, U);
+ 		C >= $A, C =< $Z -> urlencode(Rest, <<Acc/binary, C>>, P, U);
+@@ -1026,15 +1026,15 @@ urlencode(<<C, Rest/binary>>, Acc, P=Plus, U=Upper) ->
+ urlencode(<<>>, Acc, _Plus, _Upper) ->
+ 	Acc.
+ 
+--spec tohexu(byte()) -> byte().
++%%-spec tohexu(byte()) -> byte().
+ tohexu(C) when C < 10 -> $0 + C;
+ tohexu(C) when C < 17 -> $A + C - 10.
+ 
+--spec tohexl(byte()) -> byte().
++%%-spec tohexl(byte()) -> byte().
+ tohexl(C) when C < 10 -> $0 + C;
+ tohexl(C) when C < 17 -> $a + C - 10.
+ 
+--spec x_www_form_urlencoded(binary()) -> list({binary(), binary() | true}).
++%%-spec x_www_form_urlencoded(binary()) -> list({binary(), binary() | true}).
+ x_www_form_urlencoded(<<>>) ->
+ 	[];
+ x_www_form_urlencoded(Qs) ->
+diff --git a/src/cowboy_http_handler.erl b/src/cowboy_http_handler.erl
+index 0393153..2fb9adc 100644
+--- a/src/cowboy_http_handler.erl
++++ b/src/cowboy_http_handler.erl
+@@ -31,22 +31,29 @@
+ %% about the request.
+ -module(cowboy_http_handler).
+ 
+--type opts() :: any().
+--type state() :: any().
+--type terminate_reason() :: {normal, shutdown}
+-	| {normal, timeout} %% Only occurs in loop handlers.
+-	| {error, atom()}.
++%% -type opts() :: any().
++%% -type state() :: any().
++%% -type terminate_reason() :: {normal, shutdown}
++%% 	| {normal, timeout} %% Only occurs in loop handlers.
++%% 	| {error, atom()}.
+ 
+--callback init({atom(), http}, Req, opts())
+-	-> {ok, Req, state()}
+-	| {loop, Req, state()}
+-	| {loop, Req, state(), hibernate}
+-	| {loop, Req, state(), timeout()}
+-	| {loop, Req, state(), timeout(), hibernate}
+-	| {shutdown, Req, state()}
+-	| {upgrade, protocol, module()}
+-	| {upgrade, protocol, module(), Req, opts()}
+-	when Req::cowboy_req:req().
+--callback handle(Req, State) -> {ok, Req, State}
+-	when Req::cowboy_req:req(), State::state().
+--callback terminate(terminate_reason(), cowboy_req:req(), state()) -> ok.
++%% -callback init({atom(), http}, Req, opts())
++%% 	-> {ok, Req, state()}
++%% 	| {loop, Req, state()}
++%% 	| {loop, Req, state(), hibernate}
++%% 	| {loop, Req, state(), timeout()}
++%% 	| {loop, Req, state(), timeout(), hibernate}
++%% 	| {shutdown, Req, state()}
++%% 	| {upgrade, protocol, module()}
++%% 	| {upgrade, protocol, module(), Req, opts()}
++%% 	when Req::cowboy_req:req().
++%% -callback handle(Req, State) -> {ok, Req, State}
++%% 	when Req::cowboy_req:req(), State::state().
++%% -callback terminate(terminate_reason(), cowboy_req:req(), state()) -> ok.
++
++-export([behaviour_info/1]).
++
++behaviour_info(callbacks) ->
++    [{init, 3}, {info, 3}, {terminate, 3}];
++behaviour_info(_Other) ->
++    undefined.
+diff --git a/src/cowboy_loop_handler.erl b/src/cowboy_loop_handler.erl
+index f8d008f..aea02f3 100644
+--- a/src/cowboy_loop_handler.erl
++++ b/src/cowboy_loop_handler.erl
+@@ -37,25 +37,32 @@
+ %% inactivity.
+ -module(cowboy_loop_handler).
+ 
+--type opts() :: any().
+--type state() :: any().
+--type terminate_reason() :: {normal, shutdown}
+-	| {normal, timeout}
+-	| {error, atom()}.
++%% -type opts() :: any().
++%% -type state() :: any().
++%% -type terminate_reason() :: {normal, shutdown}
++%% 	| {normal, timeout}
++%% 	| {error, atom()}.
+ 
+--callback init({atom(), http}, Req, opts())
+-	-> {ok, Req, state()}
+-	| {loop, Req, state()}
+-	| {loop, Req, state(), hibernate}
+-	| {loop, Req, state(), timeout()}
+-	| {loop, Req, state(), timeout(), hibernate}
+-	| {shutdown, Req, state()}
+-	| {upgrade, protocol, module()}
+-	| {upgrade, protocol, module(), Req, opts()}
+-	when Req::cowboy_req:req().
+--callback info(any(), Req, State)
+-	-> {ok, Req, State}
+-	| {loop, Req, State}
+-	| {loop, Req, State, hibernate}
+-	when Req::cowboy_req:req(), State::state().
+--callback terminate(terminate_reason(), cowboy_req:req(), state()) -> ok.
++%% -callback init({atom(), http}, Req, opts())
++%% 	-> {ok, Req, state()}
++%% 	| {loop, Req, state()}
++%% 	| {loop, Req, state(), hibernate}
++%% 	| {loop, Req, state(), timeout()}
++%% 	| {loop, Req, state(), timeout(), hibernate}
++%% 	| {shutdown, Req, state()}
++%% 	| {upgrade, protocol, module()}
++%% 	| {upgrade, protocol, module(), Req, opts()}
++%% 	when Req::cowboy_req:req().
++%% -callback info(any(), Req, State)
++%% 	-> {ok, Req, State}
++%% 	| {loop, Req, State}
++%% 	| {loop, Req, State, hibernate}
++%% 	when Req::cowboy_req:req(), State::state().
++%% -callback terminate(terminate_reason(), cowboy_req:req(), state()) -> ok.
++
++-export([behaviour_info/1]).
++
++behaviour_info(callbacks) ->
++    [{init, 3}, {info, 3}, {terminate, 3}];
++behaviour_info(_Other) ->
++    undefined.
+diff --git a/src/cowboy_middleware.erl b/src/cowboy_middleware.erl
+index 0c1ca77..709d898 100644
+--- a/src/cowboy_middleware.erl
++++ b/src/cowboy_middleware.erl
+@@ -25,12 +25,19 @@
+ %% about the request.
+ -module(cowboy_middleware).
+ 
+--type env() :: [{atom(), any()}].
+--export_type([env/0]).
++%% -type env() :: [{atom(), any()}].
++%% -export_type([env/0]).
+ 
+--callback execute(Req, Env)
+-	-> {ok, Req, Env}
+-	| {suspend, module(), atom(), any()}
+-	| {halt, Req}
+-	| {error, cowboy_http:status(), Req}
+-	when Req::cowboy_req:req(), Env::env().
++%% -callback execute(Req, Env)
++%% 	-> {ok, Req, Env}
++%% 	| {suspend, module(), atom(), any()}
++%% 	| {halt, Req}
++%% 	| {error, cowboy_http:status(), Req}
++%% 	when Req::cowboy_req:req(), Env::env().
++
++-export([behaviour_info/1]).
++
++behaviour_info(callbacks) ->
++    [{execute, 2}];
++behaviour_info(_Other) ->
++    undefined.
+diff --git a/src/cowboy_multipart.erl b/src/cowboy_multipart.erl
+index 4e8fff0..0293750 100644
+--- a/src/cowboy_multipart.erl
++++ b/src/cowboy_multipart.erl
+@@ -18,17 +18,17 @@
+ -export([parser/1]).
+ -export([content_disposition/1]).
+ 
+--type part_parser() :: parser(more(part_result())).
+--type parser(T) :: fun((binary()) -> T).
+--type more(T) :: T | {more, parser(T)}.
+--type part_result() :: headers() | eof.
+--type headers() :: {headers, http_headers(), body_cont()}.
+--type http_headers() :: [{binary(), binary()}].
+--type body_cont() :: cont(more(body_result())).
+--type cont(T) :: fun(() -> T).
+--type body_result() :: {body, binary(), body_cont()} | end_of_part().
+--type end_of_part() :: {end_of_part, cont(more(part_result()))}.
+--type disposition() :: {binary(), [{binary(), binary()}]}.
++%% -type part_parser() :: parser(more(part_result())).
++%% -type parser(T) :: fun((binary()) -> T).
++%% -type more(T) :: T | {more, parser(T)}.
++%% -type part_result() :: headers() | eof.
++%% -type headers() :: {headers, http_headers(), body_cont()}.
++%% -type http_headers() :: [{binary(), binary()}].
++%% -type body_cont() :: cont(more(body_result())).
++%% -type cont(T) :: fun(() -> T).
++%% -type body_result() :: {body, binary(), body_cont()} | end_of_part().
++%% -type end_of_part() :: {end_of_part, cont(more(part_result()))}.
++%% -type disposition() :: {binary(), [{binary(), binary()}]}.
+ 
+ -ifdef(TEST).
+ -include_lib("eunit/include/eunit.hrl").
+@@ -37,13 +37,13 @@
+ %% API.
+ 
+ %% @doc Return a multipart parser for the given boundary.
+--spec parser(binary()) -> part_parser().
++%%-spec parser(binary()) -> part_parser().
+ parser(Boundary) when is_binary(Boundary) ->
+ 	fun (Bin) when is_binary(Bin) -> parse(Bin, Boundary) end.
+ 
+ %% @doc Parse a content disposition.
+ %% @todo Parse the MIME header instead of the HTTP one.
+--spec content_disposition(binary()) -> disposition().
++%%-spec content_disposition(binary()) -> disposition().
+ content_disposition(Data) ->
+ 	cowboy_http:token_ci(Data,
+ 		fun (_Rest, <<>>) -> {error, badarg};
+@@ -57,7 +57,7 @@ content_disposition(Data) ->
+ %% Internal.
+ 
+ %% @doc Entry point of the multipart parser, skips over the preamble if any.
+--spec parse(binary(), binary()) -> more(part_result()).
++%%-spec parse(binary(), binary()) -> more(part_result()).
+ parse(Bin, Boundary) when byte_size(Bin) >= byte_size(Boundary) + 2 ->
+ 	BoundarySize = byte_size(Boundary),
+ 	Pattern = pattern(Boundary),
+@@ -79,7 +79,7 @@ parse(Bin, Boundary) ->
+ %% @doc Return two compiled binary patterns with their sizes in bytes.
+ %% The boundary pattern is the boundary prepended with "\r\n--".
+ %% The boundary suffix pattern matches all prefixes of the boundary.
+--spec pattern(binary()) -> patterns().
++%%-spec pattern(binary()) -> patterns().
+ pattern(Boundary) ->
+ 	MatchPattern = <<"\r\n--", Boundary/binary>>,
+ 	MatchPrefixes = prefixes(MatchPattern),
+@@ -88,11 +88,11 @@ pattern(Boundary) ->
+ 
+ %% @doc Return all prefixes of a binary string.
+ %% The list of prefixes includes the full string.
+--spec prefixes(binary()) -> [binary()].
++%%-spec prefixes(binary()) -> [binary()].
+ prefixes(<<C, Rest/binary>>) ->
+ 	prefixes(Rest, <<C>>).
+ 
+--spec prefixes(binary(), binary()) -> [binary()].
++%%-spec prefixes(binary(), binary()) -> [binary()].
+ prefixes(<<C, Rest/binary>>, Acc) ->
+ 	[Acc|prefixes(Rest, <<Acc/binary, C>>)];
+ prefixes(<<>>, Acc) ->
+@@ -100,13 +100,13 @@ prefixes(<<>>, Acc) ->
+ 
+ %% @doc Test if a boundary is a possble suffix.
+ %% The patterns are expected to have been returned from `pattern/1'.
+--spec suffix_match(binary(), patterns()) -> nomatch | {integer(), integer()}.
++%%-spec suffix_match(binary(), patterns()) -> nomatch | {integer(), integer()}.
+ suffix_match(Bin, {_Boundary, {Pat, Len}}) ->
+ 	Size = byte_size(Bin),
+ 	suffix_match(Bin, Pat, Size, max(-Size, -Len)).
+ 
+--spec suffix_match(binary(), binary:cp(), non_neg_integer(), 0|neg_integer()) ->
+-		nomatch | {integer(), integer()}.
++%%-spec suffix_match(binary(), binary:cp(), non_neg_integer(), 0|neg_integer()) ->
++%%		nomatch | {integer(), integer()}.
+ suffix_match(_Bin, _Pat, _Size, _Match=0) ->
+ 	nomatch;
+ suffix_match(Bin, Pat, Size, Match) when Match < 0 ->
+@@ -118,7 +118,7 @@ suffix_match(Bin, Pat, Size, Match) when Match < 0 ->
+ 
+ %% @doc Parse remaining characters of a line beginning with the boundary.
+ %% If followed by "--", <em>eof</em> is returned and parsing is finished.
+--spec parse_boundary_tail(binary(), patterns()) -> more(part_result()).
++%%-spec parse_boundary_tail(binary(), patterns()) -> more(part_result()).
+ parse_boundary_tail(Bin, Pattern) when byte_size(Bin) >= 2 ->
+ 	case Bin of
+ 		<<"--", _Rest/binary>> ->
+@@ -134,7 +134,7 @@ parse_boundary_tail(Bin, Pattern) ->
+ 	more(Bin, fun (NewBin) -> parse_boundary_tail(NewBin, Pattern) end).
+ 
+ %% @doc Skip whitespace and unknown chars until CRLF.
+--spec parse_boundary_eol(binary(), patterns()) -> more(part_result()).
++%%-spec parse_boundary_eol(binary(), patterns()) -> more(part_result()).
+ parse_boundary_eol(Bin, Pattern) ->
+ 	case binary:match(Bin, <<"\r\n">>) of
+ 		{CrlfStart, _Length} ->
+@@ -149,7 +149,7 @@ parse_boundary_eol(Bin, Pattern) ->
+ 			more(Rest, fun (NewBin) -> parse_boundary_eol(NewBin, Pattern) end)
+ 	end.
+ 
+--spec parse_boundary_crlf(binary(), patterns()) -> more(part_result()).
++%%-spec parse_boundary_crlf(binary(), patterns()) -> more(part_result()).
+ parse_boundary_crlf(<<"\r\n", Rest/binary>>, Pattern) ->
+ 	% The binary is at least 2 bytes long as this function is only called by
+ 	% parse_boundary_eol/3 when CRLF has been found so a more tuple will never
+@@ -161,11 +161,11 @@ parse_boundary_crlf(Bin, Pattern) ->
+ 	% considered part of the boundary so EOL needs to be searched again.
+ 	parse_boundary_eol(Bin, Pattern).
+ 
+--spec parse_headers(binary(), patterns()) -> more(part_result()).
++%%-spec parse_headers(binary(), patterns()) -> more(part_result()).
+ parse_headers(Bin, Pattern) ->
+   parse_headers(Bin, Pattern, []).
+ 
+--spec parse_headers(binary(), patterns(), http_headers()) -> more(part_result()).
++%%-spec parse_headers(binary(), patterns(), http_headers()) -> more(part_result()).
+ parse_headers(Bin, Pattern, Acc) ->
+ 	case erlang:decode_packet(httph_bin, Bin, []) of
+ 		{ok, {http_header, _, Name, _, Value}, Rest} ->
+@@ -184,7 +184,7 @@ parse_headers(Bin, Pattern, Acc) ->
+ 			more(Bin, fun (NewBin) -> parse_headers(NewBin, Pattern, Acc) end)
+ 	end.
+ 
+--spec parse_body(binary(), patterns()) -> more(body_result()).
++%%-spec parse_body(binary(), patterns()) -> more(body_result()).
+ parse_body(Bin, Pattern = {{P, PSize}, _}) when byte_size(Bin) >= PSize ->
+ 	case binary:match(Bin, P) of
+ 		{0, _Length} ->
+@@ -212,11 +212,11 @@ parse_body(Bin, Pattern = {{P, PSize}, _}) when byte_size(Bin) >= PSize ->
+ parse_body(Bin, Pattern) ->
+ 	more(Bin, fun (NewBin) -> parse_body(NewBin, Pattern) end).
+ 
+--spec end_of_part(binary(), patterns()) -> end_of_part().
++%%-spec end_of_part(binary(), patterns()) -> end_of_part().
+ end_of_part(Bin, Pattern) ->
+ 	{end_of_part, fun () -> parse_boundary_tail(Bin, Pattern) end}.
+ 
+--spec skip(binary(), patterns()) -> more(part_result()).
++%%-spec skip(binary(), patterns()) -> more(part_result()).
+ skip(Bin, Pattern = {{P, PSize}, _}) ->
+ 	case binary:match(Bin, P) of
+ 		{BoundaryStart, _Length} ->
+@@ -231,7 +231,7 @@ skip(Bin, Pattern = {{P, PSize}, _}) ->
+ 			more(Rest, fun (NewBin) -> skip(NewBin, Pattern) end)
+ 	end.
+ 
+--spec more(binary(), parser(T)) -> {more, parser(T)}.
++%%-spec more(binary(), parser(T)) -> {more, parser(T)}.
+ more(<<>>, F) ->
+ 	{more, F};
+ more(Bin, InnerF) ->
+diff --git a/src/cowboy_protocol.erl b/src/cowboy_protocol.erl
+index caf0806..1e3d834 100644
+--- a/src/cowboy_protocol.erl
++++ b/src/cowboy_protocol.erl
+@@ -56,35 +56,35 @@
+ -export([parse_request/3]).
+ -export([resume/6]).
+ 
+--type onrequest_fun() :: fun((Req) -> Req).
+--type onresponse_fun() ::
+-	fun((cowboy_http:status(), cowboy_http:headers(), iodata(), Req) -> Req).
+--export_type([onrequest_fun/0]).
+--export_type([onresponse_fun/0]).
++%% -type onrequest_fun() :: fun((Req) -> Req).
++%% -type onresponse_fun() ::
++%% 	fun((cowboy_http:status(), cowboy_http:headers(), iodata(), Req) -> Req).
++%% -export_type([onrequest_fun/0]).
++%% -export_type([onresponse_fun/0]).
+ 
+ -record(state, {
+-	socket :: inet:socket(),
+-	transport :: module(),
+-	middlewares :: [module()],
+-	compress :: boolean(),
+-	env :: cowboy_middleware:env(),
+-	onrequest :: undefined | onrequest_fun(),
+-	onresponse = undefined :: undefined | onresponse_fun(),
+-	max_empty_lines :: non_neg_integer(),
+-	req_keepalive = 1 :: non_neg_integer(),
+-	max_keepalive :: non_neg_integer(),
+-	max_request_line_length :: non_neg_integer(),
+-	max_header_name_length :: non_neg_integer(),
+-	max_header_value_length :: non_neg_integer(),
+-	max_headers :: non_neg_integer(),
+-	timeout :: timeout(),
+-	until :: non_neg_integer() | infinity
++	socket ,%% inet:socket(),
++	transport ,%% module(),
++	middlewares ,%% [module()],
++	compress ,%% boolean(),
++	env ,%% cowboy_middleware:env(),
++	onrequest ,%% undefined | onrequest_fun(),
++	onresponse = undefined ,%% undefined | onresponse_fun(),
++	max_empty_lines ,%% non_neg_integer(),
++	req_keepalive = 1 ,%% non_neg_integer(),
++	max_keepalive ,%% non_neg_integer(),
++	max_request_line_length ,%% non_neg_integer(),
++	max_header_name_length ,%% non_neg_integer(),
++	max_header_value_length ,%% non_neg_integer(),
++	max_headers ,%% non_neg_integer(),
++	timeout ,%% timeout(),
++	until %% non_neg_integer() | infinity
+ }).
+ 
+ %% API.
+ 
+ %% @doc Start an HTTP protocol process.
+--spec start_link(pid(), inet:socket(), module(), any()) -> {ok, pid()}.
++%%-spec start_link(pid(), inet:socket(), module(), any()) -> {ok, pid()}.
+ start_link(ListenerPid, Socket, Transport, Opts) ->
+ 	Pid = spawn_link(?MODULE, init, [ListenerPid, Socket, Transport, Opts]),
+ 	{ok, Pid}.
+@@ -100,7 +100,7 @@ get_value(Key, Opts, Default) ->
+ 	end.
+ 
+ %% @private
+--spec init(pid(), inet:socket(), module(), any()) -> ok.
++%%-spec init(pid(), inet:socket(), module(), any()) -> ok.
+ init(ListenerPid, Socket, Transport, Opts) ->
+ 	Compress = get_value(compress, Opts, false),
+ 	MaxEmptyLines = get_value(max_empty_lines, Opts, 5),
+@@ -124,7 +124,7 @@ init(ListenerPid, Socket, Transport, Opts) ->
+ 		onrequest=OnRequest, onresponse=OnResponse,
+ 		timeout=Timeout, until=until(Timeout)}, 0).
+ 
+--spec until(timeout()) -> non_neg_integer() | infinity.
++%%-spec until(timeout()) -> non_neg_integer() | infinity.
+ until(infinity) ->
+ 	infinity;
+ until(Timeout) ->
+@@ -138,8 +138,8 @@ until(Timeout) ->
+ %% right after the header parsing is finished and the code becomes
+ %% more interesting past that point.
+ 
+--spec recv(inet:socket(), module(), non_neg_integer() | infinity)
+-	-> {ok, binary()} | {error, closed | timeout | atom()}.
++%%-spec recv(inet:socket(), module(), non_neg_integer() | infinity)
++%%	-> {ok, binary()} | {error, closed | timeout | atom()}.
+ recv(Socket, Transport, infinity) ->
+ 	Transport:recv(Socket, 0, infinity);
+ recv(Socket, Transport, Until) ->
+@@ -152,7 +152,7 @@ recv(Socket, Transport, Until) ->
+ 			Transport:recv(Socket, 0, Timeout)
+ 	end.
+ 
+--spec wait_request(binary(), #state{}, non_neg_integer()) -> ok.
++%%-spec wait_request(binary(), #state{}, non_neg_integer()) -> ok.
+ wait_request(Buffer, State=#state{socket=Socket, transport=Transport,
+ 		until=Until}, ReqEmpty) ->
+ 	case recv(Socket, Transport, Until) of
+@@ -163,7 +163,7 @@ wait_request(Buffer, State=#state{socket=Socket, transport=Transport,
+ 	end.
+ 
+ %% @private
+--spec parse_request(binary(), #state{}, non_neg_integer()) -> ok.
++%%-spec parse_request(binary(), #state{}, non_neg_integer()) -> ok.
+ %% Empty lines must be using \r\n.
+ parse_request(<< $\n, _/binary >>, State, _) ->
+ 	error_terminate(400, State);
+@@ -415,7 +415,7 @@ request(B, State=#state{transport=Transport}, M, P, Q, F, Version, Headers) ->
+ 			end
+ 	end.
+ 
+--spec default_port(atom()) -> 80 | 443.
++%%-spec default_port(atom()) -> 80 | 443.
+ default_port(ssl) -> 443;
+ default_port(_) -> 80.
+ 
+@@ -478,7 +478,7 @@ request(Buffer, State=#state{socket=Socket, transport=Transport,
+ %% in which case we consider the request handled and move on to the next
+ %% one. Note that since we haven't dispatched yet, we don't know the
+ %% handler, host_info, path_info or bindings yet.
+--spec onrequest(cowboy_req:req(), #state{}) -> ok.
++%%-spec onrequest(cowboy_req:req(), #state{}) -> ok.
+ onrequest(Req, State=#state{onrequest=undefined}) ->
+ 	execute(Req, State);
+ onrequest(Req, State=#state{onrequest=OnRequest}) ->
+@@ -488,12 +488,12 @@ onrequest(Req, State=#state{onrequest=OnRequest}) ->
+ 		_ -> next_request(Req2, State, ok)
+ 	end.
+ 
+--spec execute(cowboy_req:req(), #state{}) -> ok.
++%%-spec execute(cowboy_req:req(), #state{}) -> ok.
+ execute(Req, State=#state{middlewares=Middlewares, env=Env}) ->
+ 	execute(Req, State, Env, Middlewares).
+ 
+--spec execute(cowboy_req:req(), #state{}, cowboy_middleware:env(), [module()])
+-	-> ok.
++%%-spec execute(cowboy_req:req(), #state{}, cowboy_middleware:env(), [module()])
++%%	-> ok.
+ execute(Req, State, Env, []) ->
+ 	next_request(Req, State, get_value(result, Env, ok));
+ execute(Req, State, Env, [Middleware|Tail]) ->
+@@ -509,8 +509,8 @@ execute(Req, State, Env, [Middleware|Tail]) ->
+ 			error_terminate(Code, Req2, State)
+ 	end.
+ 
+--spec resume(#state{}, cowboy_middleware:env(), [module()],
+-	module(), module(), [any()]) -> ok.
++%%-spec resume(#state{}, cowboy_middleware:env(), [module()],
++%%	module(), module(), [any()]) -> ok.
+ resume(State, Env, Tail, Module, Function, Args) ->
+ 	case apply(Module, Function, Args) of
+ 		{ok, Req2, Env2} ->
+@@ -524,7 +524,7 @@ resume(State, Env, Tail, Module, Function, Args) ->
+ 			error_terminate(Code, Req2, State)
+ 	end.
+ 
+--spec next_request(cowboy_req:req(), #state{}, any()) -> ok.
++%%-spec next_request(cowboy_req:req(), #state{}, any()) -> ok.
+ next_request(Req, State=#state{req_keepalive=Keepalive, timeout=Timeout},
+ 		HandlerRes) ->
+ 	cowboy_req:ensure_response(Req, 204),
+@@ -550,7 +550,7 @@ next_request(Req, State=#state{req_keepalive=Keepalive, timeout=Timeout},
+ 	end.
+ 
+ %% Only send an error reply if there is no resp_sent message.
+--spec error_terminate(cowboy_http:status(), cowboy_req:req(), #state{}) -> ok.
++%%-spec error_terminate(cowboy_http:status(), cowboy_req:req(), #state{}) -> ok.
+ error_terminate(Code, Req, State) ->
+ 	receive
+ 		{cowboy_req, resp_sent} -> ok
+@@ -561,7 +561,7 @@ error_terminate(Code, Req, State) ->
+ 	terminate(State).
+ 
+ %% Only send an error reply if there is no resp_sent message.
+--spec error_terminate(cowboy_http:status(), #state{}) -> ok.
++%%-spec error_terminate(cowboy_http:status(), #state{}) -> ok.
+ error_terminate(Code, State=#state{socket=Socket, transport=Transport,
+ 		compress=Compress, onresponse=OnResponse}) ->
+ 	receive
+@@ -574,7 +574,7 @@ error_terminate(Code, State=#state{socket=Socket, transport=Transport,
+ 	end,
+ 	terminate(State).
+ 
+--spec terminate(#state{}) -> ok.
++%%-spec terminate(#state{}) -> ok.
+ terminate(#state{socket=Socket, transport=Transport}) ->
+ 	Transport:close(Socket),
+ 	ok.
+diff --git a/src/cowboy_req.erl b/src/cowboy_req.erl
+index c807a75..d92449d 100644
+--- a/src/cowboy_req.erl
++++ b/src/cowboy_req.erl
+@@ -117,58 +117,58 @@
+ -include_lib("eunit/include/eunit.hrl").
+ -endif.
+ 
+--type cookie_option() :: {max_age, non_neg_integer()}
+-	| {domain, binary()} | {path, binary()}
+-	| {secure, boolean()} | {http_only, boolean()}.
+--type cookie_opts() :: [cookie_option()].
+--export_type([cookie_opts/0]).
++%% -type cookie_option() :: {max_age, non_neg_integer()}
++%% 	| {domain, binary()} | {path, binary()}
++%% 	| {secure, boolean()} | {http_only, boolean()}.
++%% -type cookie_opts() :: [cookie_option()].
++%% -export_type([cookie_opts/0]).
+ 
+--type resp_body_fun() :: fun((inet:socket(), module()) -> ok).
++%% -type resp_body_fun() :: fun((inet:socket(), module()) -> ok).
+ 
+ -record(http_req, {
+ 	%% Transport.
+-	socket = undefined :: undefined | inet:socket(),
+-	transport = undefined :: undefined | module(),
+-	connection = keepalive :: keepalive | close,
++	socket = undefined ,%% undefined | inet:socket(),
++	transport = undefined ,%% undefined | module(),
++	connection = keepalive ,%% keepalive | close,
+ 
+ 	%% Request.
+-	pid = undefined :: pid(),
+-	method = <<"GET">> :: binary(),
+-	version = {1, 1} :: cowboy_http:version(),
+-	peer = undefined :: undefined | {inet:ip_address(), inet:port_number()},
+-	host = undefined :: undefined | binary(),
+-	host_info = undefined :: undefined | cowboy_router:tokens(),
+-	port = undefined :: undefined | inet:port_number(),
+-	path = undefined :: binary(),
+-	path_info = undefined :: undefined | cowboy_router:tokens(),
+-	qs = undefined :: binary(),
+-	qs_vals = undefined :: undefined | list({binary(), binary() | true}),
+-	fragment = undefined :: binary(),
+-	bindings = undefined :: undefined | cowboy_router:bindings(),
+-	headers = [] :: cowboy_http:headers(),
+-	p_headers = [] :: [any()], %% @todo Improve those specs.
+-	cookies = undefined :: undefined | [{binary(), binary()}],
+-	meta = [] :: [{atom(), any()}],
++	pid = undefined ,%% pid(),
++	method = <<"GET">> ,%% binary(),
++	version = {1, 1} ,%% cowboy_http:version(),
++	peer = undefined ,%% undefined | {inet:ip_address(), inet:port_number()},
++	host = undefined ,%% undefined | binary(),
++	host_info = undefined ,%% undefined | cowboy_router:tokens(),
++	port = undefined ,%% undefined | inet:port_number(),
++	path = undefined ,%% binary(),
++	path_info = undefined ,%% undefined | cowboy_router:tokens(),
++	qs = undefined ,%% binary(),
++	qs_vals = undefined ,%% undefined | list({binary(), binary() | true}),
++	fragment = undefined ,%% binary(),
++	bindings = undefined ,%% undefined | cowboy_router:bindings(),
++	headers = [] ,%% cowboy_http:headers(),
++	p_headers = [] ,%% [any()], %% @todo Improve those specs.
++	cookies = undefined ,%% undefined | [{binary(), binary()}],
++	meta = [] ,%% [{atom(), any()}],
+ 
+ 	%% Request body.
+-	body_state = waiting :: waiting | done | {stream, fun(), any(), fun()},
+-	multipart = undefined :: undefined | {non_neg_integer(), fun()},
+-	buffer = <<>> :: binary(),
++	body_state = waiting ,%% waiting | done | {stream, fun(), any(), fun()},
++	multipart = undefined ,%% undefined | {non_neg_integer(), fun()},
++	buffer = <<>> ,%% binary(),
+ 
+ 	%% Response.
+-	resp_compress = false :: boolean(),
+-	resp_state = waiting :: locked | waiting | chunks | done,
+-	resp_headers = [] :: cowboy_http:headers(),
+-	resp_body = <<>> :: iodata() | resp_body_fun()
+-		| {non_neg_integer(), resp_body_fun()},
++	resp_compress = false ,%% boolean(),
++	resp_state = waiting ,%% locked | waiting | chunks | done,
++	resp_headers = [] ,%% cowboy_http:headers(),
++	resp_body = <<>> ,%% iodata() | resp_body_fun()
++%%		| {non_neg_integer(), resp_body_fun()},
+ 
+ 	%% Functions.
+-	onresponse = undefined :: undefined | already_called
+-		| cowboy_protocol:onresponse_fun()
++	onresponse = undefined %% undefined | already_called
++%%		| cowboy_protocol:onresponse_fun()
+ }).
+ 
+--opaque req() :: #http_req{}.
+--export_type([req/0]).
++%% -opaque req() ,%% #http_req{}.
++%% -export_type([req/0]).
+ 
+ %% Request API.
+ 
+@@ -179,13 +179,13 @@
+ %%
+ %% Since we always need to parse the Connection header, we do it
+ %% in an optimized way and add the parsed value to p_headers' cache.
+--spec new(inet:socket(), module(),
+-	undefined | {inet:ip_address(), inet:port_number()},
+-	binary(), binary(), binary(), binary(),
+-	cowboy_http:version(), cowboy_http:headers(), binary(),
+-	inet:port_number() | undefined, binary(), boolean(), boolean(),
+-	undefined | cowboy_protocol:onresponse_fun())
+-	-> req().
++%%-spec new(inet:socket(), module(),
++	%% undefined | {inet:ip_address(), inet:port_number()},
++	%% binary(), binary(), binary(), binary(),
++	%% cowboy_http:version(), cowboy_http:headers(), binary(),
++	%% inet:port_number() | undefined, binary(), boolean(), boolean(),
++	%% undefined | cowboy_protocol:onresponse_fun())
++	%% -> req().
+ new(Socket, Transport, Peer, Method, Path, Query, Fragment,
+ 		Version, Headers, Host, Port, Buffer, CanKeepalive,
+ 		Compress, OnResponse) ->
+@@ -209,24 +209,24 @@ new(Socket, Transport, Peer, Method, Path, Query, Fragment,
+ 	end.
+ 
+ %% @doc Return the HTTP method of the request.
+--spec method(Req) -> {binary(), Req} when Req::req().
++%%-spec method(Req) -> {binary(), Req} when Req::req().
+ method(Req) ->
+ 	{Req#http_req.method, Req}.
+ 
+ %% @doc Return the HTTP version used for the request.
+--spec version(Req) -> {cowboy_http:version(), Req} when Req::req().
++%%-spec version(Req) -> {cowboy_http:version(), Req} when Req::req().
+ version(Req) ->
+ 	{Req#http_req.version, Req}.
+ 
+ %% @doc Return the peer address and port number of the remote host.
+--spec peer(Req)
+-	-> {undefined | {inet:ip_address(), inet:port_number()}, Req}
+-	when Req::req().
++%%-spec peer(Req)
++	%% -> {undefined | {inet:ip_address(), inet:port_number()}, Req}
++	%% when Req::req().
+ peer(Req) ->
+ 	{Req#http_req.peer, Req}.
+ 
+ %% @doc Returns the peer address calculated from headers.
+--spec peer_addr(Req) -> {inet:ip_address(), Req} when Req::req().
++%%-spec peer_addr(Req) -> {inet:ip_address(), Req} when Req::req().
+ peer_addr(Req = #http_req{}) ->
+ 	{RealIp, Req1} = header(<<"x-real-ip">>, Req),
+ 	{ForwardedForRaw, Req2} = header(<<"x-forwarded-for">>, Req1),
+@@ -249,49 +249,49 @@ peer_addr(Req = #http_req{}) ->
+ 	{PeerAddr, Req3}.
+ 
+ %% @doc Return the host binary string.
+--spec host(Req) -> {binary(), Req} when Req::req().
++%%-spec host(Req) -> {binary(), Req} when Req::req().
+ host(Req) ->
+ 	{Req#http_req.host, Req}.
+ 
+ %% @doc Return the extra host information obtained from partially matching
+ %% the hostname using <em>'...'</em>.
+--spec host_info(Req)
+-	-> {cowboy_router:tokens() | undefined, Req} when Req::req().
++%%-spec host_info(Req)
++%%	-> {cowboy_router:tokens() | undefined, Req} when Req::req().
+ host_info(Req) ->
+ 	{Req#http_req.host_info, Req}.
+ 
+ %% @doc Return the port used for this request.
+--spec port(Req) -> {inet:port_number(), Req} when Req::req().
++%%-spec port(Req) -> {inet:port_number(), Req} when Req::req().
+ port(Req) ->
+ 	{Req#http_req.port, Req}.
+ 
+ %% @doc Return the path binary string.
+--spec path(Req) -> {binary(), Req} when Req::req().
++%%-spec path(Req) -> {binary(), Req} when Req::req().
+ path(Req) ->
+ 	{Req#http_req.path, Req}.
+ 
+ %% @doc Return the extra path information obtained from partially matching
+ %% the patch using <em>'...'</em>.
+--spec path_info(Req)
+-	-> {cowboy_router:tokens() | undefined, Req} when Req::req().
++%%-spec path_info(Req)
++%%	-> {cowboy_router:tokens() | undefined, Req} when Req::req().
+ path_info(Req) ->
+ 	{Req#http_req.path_info, Req}.
+ 
+ %% @doc Return the raw query string directly taken from the request.
+--spec qs(Req) -> {binary(), Req} when Req::req().
++%%-spec qs(Req) -> {binary(), Req} when Req::req().
+ qs(Req) ->
+ 	{Req#http_req.qs, Req}.
+ 
+ %% @equiv qs_val(Name, Req, undefined)
+--spec qs_val(binary(), Req)
+-	-> {binary() | true | undefined, Req} when Req::req().
++%%-spec qs_val(binary(), Req)
++%%	-> {binary() | true | undefined, Req} when Req::req().
+ qs_val(Name, Req) when is_binary(Name) ->
+ 	qs_val(Name, Req, undefined).
+ 
+ %% @doc Return the query string value for the given key, or a default if
+ %% missing.
+--spec qs_val(binary(), Req, Default)
+-	-> {binary() | true | Default, Req} when Req::req(), Default::any().
++%%-spec qs_val(binary(), Req, Default)
++%%	-> {binary() | true | Default, Req} when Req::req(), Default::any().
+ qs_val(Name, Req=#http_req{qs=RawQs, qs_vals=undefined}, Default)
+ 		when is_binary(Name) ->
+ 	QsVals = cowboy_http:x_www_form_urlencoded(RawQs),
+@@ -303,7 +303,7 @@ qs_val(Name, Req, Default) ->
+ 	end.
+ 
+ %% @doc Return the full list of query string values.
+--spec qs_vals(Req) -> {list({binary(), binary() | true}), Req} when Req::req().
++%%-spec qs_vals(Req) -> {list({binary(), binary() | true}), Req} when Req::req().
+ qs_vals(Req=#http_req{qs=RawQs, qs_vals=undefined}) ->
+ 	QsVals = cowboy_http:x_www_form_urlencoded(RawQs),
+ 	qs_vals(Req#http_req{qs_vals=QsVals});
+@@ -311,7 +311,7 @@ qs_vals(Req=#http_req{qs_vals=QsVals}) ->
+ 	{QsVals, Req}.
+ 
+ %% @doc Return the raw fragment directly taken from the request.
+--spec fragment(Req) -> {binary(), Req} when Req::req().
++%%-spec fragment(Req) -> {binary(), Req} when Req::req().
+ fragment(Req) ->
+ 	{Req#http_req.fragment, Req}.
+ 
+@@ -319,7 +319,7 @@ fragment(Req) ->
+ %%
+ %% The URL includes the scheme, host and port only.
+ %% @see cowboy_req:url/1
+--spec host_url(Req) -> {undefined | binary(), Req} when Req::req().
++%%-spec host_url(Req) -> {undefined | binary(), Req} when Req::req().
+ host_url(Req=#http_req{port=undefined}) ->
+ 	{undefined, Req};
+ host_url(Req=#http_req{transport=Transport, host=Host, port=Port}) ->
+@@ -338,7 +338,7 @@ host_url(Req=#http_req{transport=Transport, host=Host, port=Port}) ->
+ %% @doc Return the full request URL as a binary.
+ %%
+ %% The URL includes the scheme, host, port, path, query string and fragment.
+--spec url(Req) -> {undefined | binary(), Req} when Req::req().
++%%-spec url(Req) -> {undefined | binary(), Req} when Req::req().
+ url(Req=#http_req{}) ->
+ 	{HostURL, Req2} = host_url(Req),
+ 	url(HostURL, Req2).
+@@ -357,14 +357,14 @@ url(HostURL, Req=#http_req{path=Path, qs=QS, fragment=Fragment}) ->
+ 	{<< HostURL/binary, Path/binary, QS2/binary, Fragment2/binary >>, Req}.
+ 
+ %% @equiv binding(Name, Req, undefined)
+--spec binding(atom(), Req) -> {binary() | undefined, Req} when Req::req().
++%%-spec binding(atom(), Req) -> {binary() | undefined, Req} when Req::req().
+ binding(Name, Req) when is_atom(Name) ->
+ 	binding(Name, Req, undefined).
+ 
+ %% @doc Return the binding value for the given key obtained when matching
+ %% the host and path against the dispatch list, or a default if missing.
+--spec binding(atom(), Req, Default)
+-	-> {binary() | Default, Req} when Req::req(), Default::any().
++%%-spec binding(atom(), Req, Default)
++%%	-> {binary() | Default, Req} when Req::req(), Default::any().
+ binding(Name, Req, Default) when is_atom(Name) ->
+ 	case lists:keyfind(Name, 1, Req#http_req.bindings) of
+ 		{Name, Value} -> {Value, Req};
+@@ -372,19 +372,19 @@ binding(Name, Req, Default) when is_atom(Name) ->
+ 	end.
+ 
+ %% @doc Return the full list of binding values.
+--spec bindings(Req) -> {list({atom(), binary()}), Req} when Req::req().
++%%-spec bindings(Req) -> {list({atom(), binary()}), Req} when Req::req().
+ bindings(Req) ->
+ 	{Req#http_req.bindings, Req}.
+ 
+ %% @equiv header(Name, Req, undefined)
+--spec header(binary(), Req)
+-	-> {binary() | undefined, Req} when Req::req().
++%%-spec header(binary(), Req)
++%%	-> {binary() | undefined, Req} when Req::req().
+ header(Name, Req) ->
+ 	header(Name, Req, undefined).
+ 
+ %% @doc Return the header value for the given key, or a default if missing.
+--spec header(binary(), Req, Default)
+-	-> {binary() | Default, Req} when Req::req(), Default::any().
++%%-spec header(binary(), Req, Default)
++%%	-> {binary() | Default, Req} when Req::req(), Default::any().
+ header(Name, Req, Default) ->
+ 	case lists:keyfind(Name, 1, Req#http_req.headers) of
+ 		{Name, Value} -> {Value, Req};
+@@ -392,7 +392,7 @@ header(Name, Req, Default) ->
+ 	end.
+ 
+ %% @doc Return the full list of headers.
+--spec headers(Req) -> {cowboy_http:headers(), Req} when Req::req().
++%%-spec headers(Req) -> {cowboy_http:headers(), Req} when Req::req().
+ headers(Req) ->
+ 	{Req#http_req.headers, Req}.
+ 
+@@ -401,9 +401,9 @@ headers(Req) ->
+ %% When the value isn't found, a proper default value for the type
+ %% returned is used as a return value.
+ %% @see parse_header/3
+--spec parse_header(binary(), Req)
+-	-> {ok, any(), Req} | {undefined, binary(), Req}
+-	| {error, badarg} when Req::req().
++%%-spec parse_header(binary(), Req)
++%%	-> {ok, any(), Req} | {undefined, binary(), Req}
++%%	| {error, badarg} when Req::req().
+ parse_header(Name, Req=#http_req{p_headers=PHeaders}) ->
+ 	case lists:keyfind(Name, 1, PHeaders) of
+ 		false -> parse_header(Name, Req, parse_header_default(Name));
+@@ -411,16 +411,16 @@ parse_header(Name, Req=#http_req{p_headers=PHeaders}) ->
+ 	end.
+ 
+ %% @doc Default values for semantic header parsing.
+--spec parse_header_default(binary()) -> any().
++%%-spec parse_header_default(binary()) -> any().
+ parse_header_default(<<"transfer-encoding">>) -> [<<"identity">>];
+ parse_header_default(_Name) -> undefined.
+ 
+ %% @doc Semantically parse headers.
+ %%
+ %% When the header is unknown, the value is returned directly without parsing.
+--spec parse_header(binary(), Req, any())
+-	-> {ok, any(), Req} | {undefined, binary(), Req}
+-	| {error, badarg} when Req::req().
++%%-spec parse_header(binary(), Req, any())
++%%	-> {ok, any(), Req} | {undefined, binary(), Req}
++%%	| {error, badarg} when Req::req().
+ parse_header(Name, Req, Default) when Name =:= <<"accept">> ->
+ 	parse_header(Name, Req, Default,
+ 		fun (Value) ->
+@@ -498,15 +498,15 @@ parse_header(Name, Req=#http_req{p_headers=PHeaders}, Default, Fun) ->
+ 	end.
+ 
+ %% @equiv cookie(Name, Req, undefined)
+--spec cookie(binary(), Req)
+-	-> {binary() | true | undefined, Req} when Req::req().
++%%-spec cookie(binary(), Req)
++%%	-> {binary() | true | undefined, Req} when Req::req().
+ cookie(Name, Req) when is_binary(Name) ->
+ 	cookie(Name, Req, undefined).
+ 
+ %% @doc Return the cookie value for the given key, or a default if
+ %% missing.
+--spec cookie(binary(), Req, Default)
+-	-> {binary() | true | Default, Req} when Req::req(), Default::any().
++%%-spec cookie(binary(), Req, Default)
++%%	-> {binary() | true | Default, Req} when Req::req(), Default::any().
+ cookie(Name, Req=#http_req{cookies=undefined}, Default) when is_binary(Name) ->
+ 	case parse_header(<<"cookie">>, Req) of
+ 		{ok, undefined, Req2} ->
+@@ -521,7 +521,7 @@ cookie(Name, Req, Default) ->
+ 	end.
+ 
+ %% @doc Return the full list of cookie values.
+--spec cookies(Req) -> {list({binary(), binary() | true}), Req} when Req::req().
++%%-spec cookies(Req) -> {list({binary(), binary() | true}), Req} when Req::req().
+ cookies(Req=#http_req{cookies=undefined}) ->
+ 	case parse_header(<<"cookie">>, Req) of
+ 		{ok, undefined, Req2} ->
+@@ -533,7 +533,7 @@ cookies(Req=#http_req{cookies=Cookies}) ->
+ 	{Cookies, Req}.
+ 
+ %% @equiv meta(Name, Req, undefined)
+--spec meta(atom(), Req) -> {any() | undefined, Req} when Req::req().
++%%-spec meta(atom(), Req) -> {any() | undefined, Req} when Req::req().
+ meta(Name, Req) ->
+ 	meta(Name, Req, undefined).
+ 
+@@ -542,7 +542,7 @@ meta(Name, Req) ->
+ %% Metadata information varies from one protocol to another. Websockets
+ %% would define the protocol version here, while REST would use it to
+ %% indicate which media type, language and charset were retained.
+--spec meta(atom(), Req, any()) -> {any(), Req} when Req::req().
++%%-spec meta(atom(), Req, any()) -> {any(), Req} when Req::req().
+ meta(Name, Req, Default) ->
+ 	case lists:keyfind(Name, 1, Req#http_req.meta) of
+ 		{Name, Value} -> {Value, Req};
+@@ -554,14 +554,14 @@ meta(Name, Req, Default) ->
+ %% You can use this function to attach information about the request.
+ %%
+ %% If the value already exists it will be overwritten.
+--spec set_meta(atom(), any(), Req) -> Req when Req::req().
++%%-spec set_meta(atom(), any(), Req) -> Req when Req::req().
+ set_meta(Name, Value, Req=#http_req{meta=Meta}) ->
+ 	Req#http_req{meta=[{Name, Value}|lists:keydelete(Name, 1, Meta)]}.
+ 
+ %% Request Body API.
+ 
+ %% @doc Return whether the request message has a body.
+--spec has_body(cowboy_req:req()) -> boolean().
++%%-spec has_body(cowboy_req:req()) -> boolean().
+ has_body(Req) ->
+ 	lists:keymember(<<"content-length">>, 1, Req#http_req.headers) orelse
+ 		lists:keymember(<<"transfer-encoding">>, 1, Req#http_req.headers).
+@@ -570,7 +570,7 @@ has_body(Req) ->
+ %%
+ %% The length may not be known if Transfer-Encoding is not identity,
+ %% and the body hasn't been read at the time of the call.
+--spec body_length(Req) -> {undefined | non_neg_integer(), Req} when Req::req().
++%%-spec body_length(Req) -> {undefined | non_neg_integer(), Req} when Req::req().
+ body_length(Req) ->
+ 	case lists:keymember(<<"transfer-encoding">>, 1, Req#http_req.headers) of
+ 		true ->
+@@ -596,7 +596,7 @@ body_length(Req) ->
+ %% Content encoding is generally used for compression.
+ %%
+ %% Standard encodings can be found in cowboy_http.
+--spec init_stream(fun(), any(), fun(), Req) -> {ok, Req} when Req::req().
++%%-spec init_stream(fun(), any(), fun(), Req) -> {ok, Req} when Req::req().
+ init_stream(TransferDecode, TransferState, ContentDecode, Req) ->
+ 	{ok, Req#http_req{body_state=
+ 		{stream, TransferDecode, TransferState, ContentDecode}}}.
+@@ -612,8 +612,8 @@ init_stream(TransferDecode, TransferState, ContentDecode, Req) ->
+ %%
+ %% It then starts streaming the body, returning {ok, Data, Req}
+ %% for each streamed part, and {done, Req} when it's finished streaming.
+--spec stream_body(Req) -> {ok, binary(), Req}
+-	| {done, Req} | {error, atom()} when Req::req().
++%%-spec stream_body(Req) -> {ok, binary(), Req}
++%%	| {done, Req} | {error, atom()} when Req::req().
+ stream_body(Req=#http_req{body_state=waiting,
+ 		version=Version, transport=Transport, socket=Socket}) ->
+ 	case parse_header(<<"expect">>, Req) of
+@@ -648,8 +648,8 @@ stream_body(Req=#http_req{body_state={stream, _, _, _}}) ->
+ stream_body(Req=#http_req{body_state=done}) ->
+ 	{done, Req}.
+ 
+--spec stream_body_recv(non_neg_integer(), Req)
+-	-> {ok, binary(), Req} | {error, atom()} when Req::req().
++%%-spec stream_body_recv(non_neg_integer(), Req)
++%%	-> {ok, binary(), Req} | {error, atom()} when Req::req().
+ stream_body_recv(Length, Req=#http_req{
+ 		transport=Transport, socket=Socket, buffer=Buffer}) ->
+ 	%% @todo Allow configuring the timeout.
+@@ -659,8 +659,8 @@ stream_body_recv(Length, Req=#http_req{
+ 		{error, Reason} -> {error, Reason}
+ 	end.
+ 
+--spec transfer_decode(binary(), Req)
+-	-> {ok, binary(), Req} | {error, atom()} when Req::req().
++%%-spec transfer_decode(binary(), Req)
++%%	-> {ok, binary(), Req} | {error, atom()} when Req::req().
+ transfer_decode(Data, Req=#http_req{
+ 		body_state={stream, TransferDecode, TransferState, ContentDecode}}) ->
+ 	case TransferDecode(Data, TransferState) of
+@@ -687,8 +687,8 @@ transfer_decode(Data, Req=#http_req{
+ 			{error, Reason}
+ 	end.
+ 
+--spec transfer_decode_done(non_neg_integer(), binary(), Req)
+-	-> Req when Req::req().
++%%-spec transfer_decode_done(non_neg_integer(), binary(), Req)
++%%	-> Req when Req::req().
+ transfer_decode_done(Length, Rest, Req=#http_req{
+ 		headers=Headers, p_headers=PHeaders}) ->
+ 	Headers2 = lists:keystore(<<"content-length">>, 1, Headers,
+@@ -702,8 +702,8 @@ transfer_decode_done(Length, Rest, Req=#http_req{
+ 		headers=Headers3, p_headers=PHeaders3}.
+ 
+ %% @todo Probably needs a Rest.
+--spec content_decode(fun(), binary(), Req)
+-	-> {ok, binary(), Req} | {error, atom()} when Req::req().
++%%-spec content_decode(fun(), binary(), Req)
++%%	-> {ok, binary(), Req} | {error, atom()} when Req::req().
+ content_decode(ContentDecode, Data, Req) ->
+ 	case ContentDecode(Data) of
+ 		{ok, Data2} -> {ok, Data2, Req};
+@@ -711,12 +711,12 @@ content_decode(ContentDecode, Data, Req) ->
+ 	end.
+ 
+ %% @doc Return the full body sent with the request.
+--spec body(Req) -> {ok, binary(), Req} | {error, atom()} when Req::req().
++%%-spec body(Req) -> {ok, binary(), Req} | {error, atom()} when Req::req().
+ body(Req) ->
+ 	body(Req, <<>>).
+ 
+--spec body(Req, binary())
+-	-> {ok, binary(), Req} | {error, atom()} when Req::req().
++%%-spec body(Req, binary())
++%%	-> {ok, binary(), Req} | {error, atom()} when Req::req().
+ body(Req, Acc) ->
+ 	case stream_body(Req) of
+ 		{ok, Data, Req2} ->
+@@ -727,7 +727,7 @@ body(Req, Acc) ->
+ 			{error, Reason}
+ 	end.
+ 
+--spec skip_body(Req) -> {ok, Req} | {error, atom()} when Req::req().
++%%-spec skip_body(Req) -> {ok, Req} | {error, atom()} when Req::req().
+ skip_body(Req) ->
+ 	case stream_body(Req) of
+ 		{ok, _, Req2} -> skip_body(Req2);
+@@ -737,9 +737,9 @@ skip_body(Req) ->
+ 
+ %% @doc Return the full body sent with the request, parsed as an
+ %% application/x-www-form-urlencoded string. Essentially a POST query string.
+--spec body_qs(Req)
+-	-> {ok, [{binary(), binary() | true}], Req} | {error, atom()}
+-	when Req::req().
++%%-spec body_qs(Req)
++%%	-> {ok, [{binary(), binary() | true}], Req} | {error, atom()}
++%%	when Req::req().
+ body_qs(Req) ->
+ 	case body(Req) of
+ 		{ok, Body, Req2} ->
+@@ -759,9 +759,9 @@ body_qs(Req) ->
+ %%
+ %% If the request Content-Type is not a multipart one, <em>{error, badarg}</em>
+ %% is returned.
+--spec multipart_data(Req)
+-	-> {headers, cowboy_http:headers(), Req} | {body, binary(), Req}
+-		| {end_of_part | eof, Req} when Req::req().
++%%-spec multipart_data(Req)
++%%	-> {headers, cowboy_http:headers(), Req} | {body, binary(), Req}
++%%		| {end_of_part | eof, Req} when Req::req().
+ multipart_data(Req=#http_req{body_state=waiting}) ->
+ 	{ok, {<<"multipart">>, _SubType, Params}, Req2} =
+ 		parse_header(<<"content-type">>, Req),
+@@ -798,7 +798,7 @@ multipart_data(Req, Length, {more, Parser}) when Length > 0 ->
+ %%
+ %% This function repeatedly calls <em>multipart_data/1</em> until
+ %% <em>end_of_part</em> or <em>eof</em> is parsed.
+--spec multipart_skip(Req) -> {ok, Req} when Req::req().
++%%-spec multipart_skip(Req) -> {ok, Req} when Req::req().
+ multipart_skip(Req) ->
+ 	case multipart_data(Req) of
+ 		{end_of_part, Req2} -> {ok, Req2};
+@@ -815,15 +815,15 @@ multipart_skip(Req) ->
+ %%
+ %% The cookie value cannot contain any of the following characters:
+ %%   ,; \t\r\n\013\014
+--spec set_resp_cookie(iodata(), iodata(), cookie_opts(), Req)
+-	-> Req when Req::req().
++%%-spec set_resp_cookie(iodata(), iodata(), cookie_opts(), Req)
++%%	-> Req when Req::req().
+ set_resp_cookie(Name, Value, Opts, Req) ->
+ 	Cookie = cowboy_http:cookie_to_iodata(Name, Value, Opts),
+ 	set_resp_header(<<"set-cookie">>, Cookie, Req).
+ 
+ %% @doc Add a header to the response.
+--spec set_resp_header(binary(), iodata(), Req)
+-	-> Req when Req::req().
++%%-spec set_resp_header(binary(), iodata(), Req)
++%%	-> Req when Req::req().
+ set_resp_header(Name, Value, Req=#http_req{resp_headers=RespHeaders}) ->
+ 	Req#http_req{resp_headers=[{Name, Value}|RespHeaders]}.
+ 
+@@ -832,7 +832,7 @@ set_resp_header(Name, Value, Req=#http_req{resp_headers=RespHeaders}) ->
+ %% The body set here is ignored if the response is later sent using
+ %% anything other than reply/2 or reply/3. The response body is expected
+ %% to be a binary or an iolist.
+--spec set_resp_body(iodata(), Req) -> Req when Req::req().
++%%-spec set_resp_body(iodata(), Req) -> Req when Req::req().
+ set_resp_body(Body, Req) ->
+ 	Req#http_req{resp_body=Body}.
+ 
+@@ -848,7 +848,7 @@ set_resp_body(Body, Req) ->
+ %% To inform the client that a body has been sent with this request,
+ %% Cowboy will add a "Transfer-Encoding: identity" header to the
+ %% response.
+--spec set_resp_body_fun(resp_body_fun(), Req) -> Req when Req::req().
++%%-spec set_resp_body_fun(resp_body_fun(), Req) -> Req when Req::req().
+ set_resp_body_fun(StreamFun, Req) when is_function(StreamFun) ->
+ 	Req#http_req{resp_body=StreamFun}.
+ 
+@@ -863,19 +863,19 @@ set_resp_body_fun(StreamFun, Req) when is_function(StreamFun) ->
+ %%
+ %% If the body function crashes while writing the response body or writes
+ %% fewer bytes than declared the behaviour is undefined.
+--spec set_resp_body_fun(non_neg_integer(), resp_body_fun(), Req)
+-	-> Req when Req::req().
++%%-spec set_resp_body_fun(non_neg_integer(), resp_body_fun(), Req)
++%%	-> Req when Req::req().
+ set_resp_body_fun(StreamLen, StreamFun, Req)
+ 		when is_integer(StreamLen), is_function(StreamFun) ->
+ 	Req#http_req{resp_body={StreamLen, StreamFun}}.
+ 
+ %% @doc Return whether the given header has been set for the response.
+--spec has_resp_header(binary(), req()) -> boolean().
++%%-spec has_resp_header(binary(), req()) -> boolean().
+ has_resp_header(Name, #http_req{resp_headers=RespHeaders}) ->
+ 	lists:keymember(Name, 1, RespHeaders).
+ 
+ %% @doc Return whether a body has been set for the response.
+--spec has_resp_body(req()) -> boolean().
++%%-spec has_resp_body(req()) -> boolean().
+ has_resp_body(#http_req{resp_body=RespBody}) when is_function(RespBody) ->
+ 	true;
+ has_resp_body(#http_req{resp_body={Length, _}}) ->
+@@ -884,27 +884,27 @@ has_resp_body(#http_req{resp_body=RespBody}) ->
+ 	iolist_size(RespBody) > 0.
+ 
+ %% Remove a header previously set for the response.
+--spec delete_resp_header(binary(), Req)
+-	-> Req when Req::req().
++%%-spec delete_resp_header(binary(), Req)
++%%	-> Req when Req::req().
+ delete_resp_header(Name, Req=#http_req{resp_headers=RespHeaders}) ->
+ 	RespHeaders2 = lists:keydelete(Name, 1, RespHeaders),
+ 	Req#http_req{resp_headers=RespHeaders2}.
+ 
+ %% @equiv reply(Status, [], [], Req)
+--spec reply(cowboy_http:status(), Req) -> {ok, Req} when Req::req().
++%%-spec reply(cowboy_http:status(), Req) -> {ok, Req} when Req::req().
+ reply(Status, Req=#http_req{resp_body=Body}) ->
+ 	reply(Status, [], Body, Req).
+ 
+ %% @equiv reply(Status, Headers, [], Req)
+--spec reply(cowboy_http:status(), cowboy_http:headers(), Req)
+-	-> {ok, Req} when Req::req().
++%%-spec reply(cowboy_http:status(), cowboy_http:headers(), Req)
++%%	-> {ok, Req} when Req::req().
+ reply(Status, Headers, Req=#http_req{resp_body=Body}) ->
+ 	reply(Status, Headers, Body, Req).
+ 
+ %% @doc Send a reply to the client.
+--spec reply(cowboy_http:status(), cowboy_http:headers(),
+-	iodata() | {non_neg_integer() | resp_body_fun()}, Req)
+-	-> {ok, Req} when Req::req().
++%%-spec reply(cowboy_http:status(), cowboy_http:headers(),
++%%	iodata() | {non_neg_integer() | resp_body_fun()}, Req)
++%%	-> {ok, Req} when Req::req().
+ reply(Status, Headers, Body, Req=#http_req{
+ 		socket=Socket, transport=Transport,
+ 		version=Version, connection=Connection,
+@@ -994,14 +994,14 @@ reply_no_compress(Status, Headers, Body, Req,
+ 	Req2.
+ 
+ %% @equiv chunked_reply(Status, [], Req)
+--spec chunked_reply(cowboy_http:status(), Req) -> {ok, Req} when Req::req().
++%%-spec chunked_reply(cowboy_http:status(), Req) -> {ok, Req} when Req::req().
+ chunked_reply(Status, Req) ->
+ 	chunked_reply(Status, [], Req).
+ 
+ %% @doc Initiate the sending of a chunked reply to the client.
+ %% @see cowboy_req:chunk/2
+--spec chunked_reply(cowboy_http:status(), cowboy_http:headers(), Req)
+-	-> {ok, Req} when Req::req().
++%%-spec chunked_reply(cowboy_http:status(), cowboy_http:headers(), Req)
++%%	-> {ok, Req} when Req::req().
+ chunked_reply(Status, Headers, Req=#http_req{
+ 		version=Version, connection=Connection,
+ 		resp_state=waiting, resp_headers=RespHeaders}) ->
+@@ -1022,7 +1022,7 @@ chunked_reply(Status, Headers, Req=#http_req{
+ %% @doc Send a chunk of data.
+ %%
+ %% A chunked reply must have been initiated before calling this function.
+--spec chunk(iodata(), req()) -> ok | {error, atom()}.
++%%-spec chunk(iodata(), req()) -> ok | {error, atom()}.
+ chunk(_Data, #http_req{method= <<"HEAD">>}) ->
+ 	ok;
+ chunk(Data, #http_req{socket=Socket, transport=Transport, version={1, 0}}) ->
+@@ -1033,8 +1033,8 @@ chunk(Data, #http_req{socket=Socket, transport=Transport, resp_state=chunks}) ->
+ 
+ %% @doc Send an upgrade reply.
+ %% @private
+--spec upgrade_reply(cowboy_http:status(), cowboy_http:headers(), Req)
+-	-> {ok, Req} when Req::req().
++%%-spec upgrade_reply(cowboy_http:status(), cowboy_http:headers(), Req)
++%%	-> {ok, Req} when Req::req().
+ upgrade_reply(Status, Headers, Req=#http_req{
+ 		resp_state=waiting, resp_headers=RespHeaders}) ->
+ 	{_, Req2} = response(Status, Headers, RespHeaders, [
+@@ -1044,7 +1044,7 @@ upgrade_reply(Status, Headers, Req=#http_req{
+ 
+ %% @doc Ensure the response has been sent fully.
+ %% @private
+--spec ensure_response(req(), cowboy_http:status()) -> ok.
++%%-spec ensure_response(req(), cowboy_http:status()) -> ok.
+ %% The response has already been fully sent to the client.
+ ensure_response(#http_req{resp_state=done}, _) ->
+ 	ok;
+@@ -1066,7 +1066,7 @@ ensure_response(#http_req{socket=Socket, transport=Transport,
+ %% Private setter/getter API.
+ 
+ %% @private
+--spec get(atom(), req()) -> any(); ([atom()], req()) -> any().
++%%-spec get(atom(), req()) -> any(); ([atom()], req()) -> any().
+ get(List, Req) when is_list(List) ->
+ 	[g(Atom, Req) || Atom <- List];
+ get(Atom, Req) when is_atom(Atom) ->
+@@ -1101,7 +1101,7 @@ g(transport, #http_req{transport=Ret}) -> Ret;
+ g(version, #http_req{version=Ret}) -> Ret.
+ 
+ %% @private
+--spec set([{atom(), any()}], Req) -> Req when Req::req().
++%%-spec set([{atom(), any()}], Req) -> Req when Req::req().
+ set([], Req) -> Req;
+ set([{bindings, Val}|Tail], Req) -> set(Tail, Req#http_req{bindings=Val});
+ set([{body_state, Val}|Tail], Req) -> set(Tail, Req#http_req{body_state=Val});
+@@ -1132,8 +1132,8 @@ set([{transport, Val}|Tail], Req) -> set(Tail, Req#http_req{transport=Val});
+ set([{version, Val}|Tail], Req) -> set(Tail, Req#http_req{version=Val}).
+ 
+ %% @private
+--spec set_bindings(cowboy_router:tokens(), cowboy_router:tokens(),
+-	cowboy_router:bindings(), Req) -> Req when Req::req().
++%%-spec set_bindings(cowboy_router:tokens(), cowboy_router:tokens(),
++%%	cowboy_router:bindings(), Req) -> Req when Req::req().
+ set_bindings(HostInfo, PathInfo, Bindings, Req) ->
+ 	Req#http_req{host_info=HostInfo, path_info=PathInfo,
+ 		bindings=Bindings}.
+@@ -1147,7 +1147,7 @@ set_bindings(HostInfo, PathInfo, Bindings, Req) ->
+ %%
+ %% Use it when you really need to save up memory, for example when having
+ %% many concurrent long-running connections.
+--spec compact(Req) -> Req when Req::req().
++%%-spec compact(Req) -> Req when Req::req().
+ compact(Req) ->
+ 	Req#http_req{host_info=undefined,
+ 		path_info=undefined, qs_vals=undefined,
+@@ -1156,20 +1156,20 @@ compact(Req) ->
+ 
+ %% @doc Prevent any further responses.
+ %% @private
+--spec lock(Req) -> Req when Req::req().
++%%-spec lock(Req) -> Req when Req::req().
+ lock(Req) ->
+ 	Req#http_req{resp_state=locked}.
+ 
+ %% @doc Convert the Req object to a list of key/values.
+--spec to_list(req()) -> [{atom(), any()}].
++%%-spec to_list(req()) -> [{atom(), any()}].
+ to_list(Req) ->
+ 	lists:zip(record_info(fields, http_req), tl(tuple_to_list(Req))).
+ 
+ %% Internal.
+ 
+--spec response(cowboy_http:status(), cowboy_http:headers(),
+-	cowboy_http:headers(), cowboy_http:headers(), iodata(), Req)
+-	-> {normal | hook, Req} when Req::req().
++%%-spec response(cowboy_http:status(), cowboy_http:headers(),
++%%	cowboy_http:headers(), cowboy_http:headers(), iodata(), Req)
++%%	-> {normal | hook, Req} when Req::req().
+ response(Status, Headers, RespHeaders, DefaultHeaders, Body, Req=#http_req{
+ 		socket=Socket, transport=Transport, version=Version,
+ 		pid=ReqPid, onresponse=OnResponse}) ->
+@@ -1200,8 +1200,8 @@ response(Status, Headers, RespHeaders, DefaultHeaders, Body, Req=#http_req{
+ 	end,
+ 	{ReplyType, Req2}.
+ 
+--spec response_connection(cowboy_http:headers(), keepalive | close)
+-	-> keepalive | close.
++%%-spec response_connection(cowboy_http:headers(), keepalive | close)
++%%	-> keepalive | close.
+ response_connection([], Connection) ->
+ 	Connection;
+ response_connection([{Name, Value}|Tail], Connection) ->
+@@ -1213,16 +1213,16 @@ response_connection([{Name, Value}|Tail], Connection) ->
+ 			response_connection(Tail, Connection)
+ 	end.
+ 
+--spec response_merge_headers(cowboy_http:headers(), cowboy_http:headers(),
+-	cowboy_http:headers()) -> cowboy_http:headers().
++%%-spec response_merge_headers(cowboy_http:headers(), cowboy_http:headers(),
++%%	cowboy_http:headers()) -> cowboy_http:headers().
+ response_merge_headers(Headers, RespHeaders, DefaultHeaders) ->
+ 	Headers2 = [{Key, Value} || {Key, Value} <- Headers],
+ 	merge_headers(
+ 		merge_headers(Headers2, RespHeaders),
+ 		DefaultHeaders).
+ 
+--spec merge_headers(cowboy_http:headers(), cowboy_http:headers())
+-	-> cowboy_http:headers().
++%%-spec merge_headers(cowboy_http:headers(), cowboy_http:headers())
++%%	-> cowboy_http:headers().
+ 
+ %% Merge headers by prepending the tuples in the second list to the
+ %% first list. It also handles Set-Cookie properly, which supports
+@@ -1242,8 +1242,8 @@ merge_headers(Headers, [{Name, Value}|Tail]) ->
+ 	end,
+ 	merge_headers(Headers2, Tail).
+ 
+--spec atom_to_connection(keepalive) -> <<_:80>>;
+-						(close) -> <<_:40>>.
++%%-spec atom_to_connection(keepalive) -> <<_:80>>;
++%%						(close) -> <<_:40>>.
+ atom_to_connection(keepalive) ->
+ 	<<"keep-alive">>;
+ atom_to_connection(close) ->
+@@ -1301,7 +1301,7 @@ parse_connection(<< C, Rest/bits >>, Acc, Token) ->
+ %% the connection is keepalive or closed.
+ %%
+ %% We don't match on "keep-alive" since it is the default value.
+--spec connection_to_atom([binary()]) -> keepalive | close.
++%%-spec connection_to_atom([binary()]) -> keepalive | close.
+ connection_to_atom([]) ->
+ 	keepalive;
+ connection_to_atom([<<"close">>|_]) ->
+@@ -1309,7 +1309,7 @@ connection_to_atom([<<"close">>|_]) ->
+ connection_to_atom([_|Tail]) ->
+ 	connection_to_atom(Tail).
+ 
+--spec status(cowboy_http:status()) -> binary().
++%%-spec status(cowboy_http:status()) -> binary().
+ status(100) -> <<"100 Continue">>;
+ status(101) -> <<"101 Switching Protocols">>;
+ status(102) -> <<"102 Processing">>;
+diff --git a/src/cowboy_rest.erl b/src/cowboy_rest.erl
+index a49d622..0273d4c 100644
+--- a/src/cowboy_rest.erl
++++ b/src/cowboy_rest.erl
+@@ -55,9 +55,9 @@
+ %% You do not need to call this function manually. To upgrade to the REST
+ %% protocol, you simply need to return <em>{upgrade, protocol, {@module}}</em>
+ %% in your <em>cowboy_http_handler:init/3</em> handler function.
+--spec upgrade(Req, Env, module(), any())
+-	-> {ok, Req, Env} | {error, 500, Req}
+-	when Req::cowboy_req:req(), Env::cowboy_middleware:env().
++%%-spec upgrade(Req, Env, module(), any())
++%%	-> {ok, Req, Env} | {error, 500, Req}
++%%	when Req::cowboy_req:req(), Env::cowboy_middleware:env().
+ upgrade(Req, Env, Handler, HandlerOpts) ->
+ 	try
+ 		Method = cowboy_req:get(method, Req),
+@@ -868,7 +868,7 @@ set_resp_etag(Req, State) ->
+ 			{Req3, State2}
+ 	end.
+ 
+--spec encode_etag({strong | weak, binary()}) -> iolist().
++%%-spec encode_etag({strong | weak, binary()}) -> iolist().
+ encode_etag({strong, Etag}) -> [$",Etag,$"];
+ encode_etag({weak, Etag}) -> ["W/\"",Etag,$"].
+ 
+diff --git a/src/cowboy_router.erl b/src/cowboy_router.erl
+index 10db3f7..8fe6910 100644
+--- a/src/cowboy_router.erl
++++ b/src/cowboy_router.erl
+@@ -28,28 +28,28 @@
+ -export([compile/1]).
+ -export([execute/2]).
+ 
+--type bindings() :: [{atom(), binary()}].
+--type tokens() :: [binary()].
+--export_type([bindings/0]).
+--export_type([tokens/0]).
+-
+--type constraints() :: [{atom(), int}
+-	| {atom(), function, fun ((binary()) -> true | {true, any()} | false)}].
+--export_type([constraints/0]).
+-
+--type route_match() :: binary() | string().
+--type route_path() :: {Path::route_match(), Handler::module(), Opts::any()}
+-	| {Path::route_match(), constraints(), Handler::module(), Opts::any()}.
+--type route_rule() :: {Host::route_match(), Paths::[route_path()]}
+-	| {Host::route_match(), constraints(), Paths::[route_path()]}.
+--opaque routes() :: [route_rule()].
+--export_type([routes/0]).
+-
+--type dispatch_match() :: '_' | <<_:8>> | [binary() | '_' | '...' | atom()].
+--type dispatch_path() :: {dispatch_match(), module(), any()}.
+--type dispatch_rule() :: {Host::dispatch_match(), Paths::[dispatch_path()]}.
+--opaque dispatch_rules() :: [dispatch_rule()].
+--export_type([dispatch_rules/0]).
++%% -type bindings() :: [{atom(), binary()}].
++%% -type tokens() :: [binary()].
++%% -export_type([bindings/0]).
++%% -export_type([tokens/0]).
++
++%% -type constraints() :: [{atom(), int}
++%% 	| {atom(), function, fun ((binary()) -> true | {true, any()} | false)}].
++%% -export_type([constraints/0]).
++
++%% -type route_match() :: binary() | string().
++%% -type route_path() :: {Path::route_match(), Handler::module(), Opts::any()}
++%% 	| {Path::route_match(), constraints(), Handler::module(), Opts::any()}.
++%% -type route_rule() :: {Host::route_match(), Paths::[route_path()]}
++%% 	| {Host::route_match(), constraints(), Paths::[route_path()]}.
++%% -opaque routes() :: [route_rule()].
++%% -export_type([routes/0]).
++
++%% -type dispatch_match() :: '_' | <<_:8>> | [binary() | '_' | '...' | atom()].
++%% -type dispatch_path() :: {dispatch_match(), module(), any()}.
++%% -type dispatch_rule() :: {Host::dispatch_match(), Paths::[dispatch_path()]}.
++%% -opaque dispatch_rules() :: [dispatch_rule()].
++%% -export_type([dispatch_rules/0]).
+ 
+ -ifdef(TEST).
+ -include_lib("eunit/include/eunit.hrl").
+@@ -57,7 +57,7 @@
+ 
+ %% @doc Compile a list of routes into the dispatch format used
+ %% by Cowboy's routing.
+--spec compile(routes()) -> dispatch_rules().
++%%-spec compile(routes()) -> dispatch_rules().
+ compile(Routes) ->
+ 	compile(Routes, []).
+ 
+@@ -164,9 +164,9 @@ compile_brackets_split(<< C, Rest/binary >>, Acc, N) ->
+ 	compile_brackets_split(Rest, << Acc/binary, C >>, N).
+ 
+ %% @private
+--spec execute(Req, Env)
+-	-> {ok, Req, Env} | {error, 400 | 404, Req}
+-	when Req::cowboy_req:req(), Env::cowboy_middleware:env().
++%%-spec execute(Req, Env)
++	%% -> {ok, Req, Env} | {error, 400 | 404, Req}
++	%% when Req::cowboy_req:req(), Env::cowboy_middleware:env().
+ execute(Req, Env) ->
+ 	{_, Dispatch} = lists:keyfind(dispatch, 1, Env),
+ 	[Host, Path] = cowboy_req:get([host, path], Req),
+@@ -212,12 +212,12 @@ execute(Req, Env) ->
+ %% options found in the dispatch list, a key-value list of bindings and
+ %% the tokens that were matched by the <em>'...'</em> atom for both the
+ %% hostname and path.
+--spec match(dispatch_rules(), Host::binary() | tokens(), Path::binary())
+-	-> {ok, module(), any(), bindings(),
+-		HostInfo::undefined | tokens(),
+-		PathInfo::undefined | tokens()}
+-	| {error, notfound, host} | {error, notfound, path}
+-	| {error, badrequest, path}.
++%%-spec match(dispatch_rules(), Host::binary() | tokens(), Path::binary())
++	%% -> {ok, module(), any(), bindings(),
++	%% 	HostInfo::undefined | tokens(),
++	%% 	PathInfo::undefined | tokens()}
++	%% | {error, notfound, host} | {error, notfound, path}
++	%% | {error, badrequest, path}.
+ match([], _, _) ->
+ 	{error, notfound, host};
+ %% If the host is '_' then there can be no constraints.
+@@ -243,12 +243,12 @@ match([{HostMatch, Constraints, PathMatchs}|Tail], Tokens, Path)
+ match(Dispatch, Host, Path) ->
+ 	match(Dispatch, split_host(Host), Path).
+ 
+--spec match_path([dispatch_path()],
+-	HostInfo::undefined | tokens(), binary() | tokens(), bindings())
+-	-> {ok, module(), any(), bindings(),
+-		HostInfo::undefined | tokens(),
+-		PathInfo::undefined | tokens()}
+-	| {error, notfound, path} | {error, badrequest, path}.
++%%-spec match_path([dispatch_path()],
++	%% HostInfo::undefined | tokens(), binary() | tokens(), bindings())
++	%% -> {ok, module(), any(), bindings(),
++	%% 	HostInfo::undefined | tokens(),
++	%% 	PathInfo::undefined | tokens()}
++	%% | {error, notfound, path} | {error, badrequest, path}.
+ match_path([], _, _, _) ->
+ 	{error, notfound, path};
+ %% If the path is '_' then there can be no constraints.
+@@ -302,7 +302,7 @@ check_constraint({_, function, Fun}, Value) ->
+ 	Fun(Value).
+ 
+ %% @doc Split a hostname into a list of tokens.
+--spec split_host(binary()) -> tokens().
++%%-spec split_host(binary()) -> tokens().
+ split_host(Host) ->
+ 	split_host(Host, []).
+ 
+@@ -323,7 +323,7 @@ split_host(Host, Acc) ->
+ %% Following RFC2396, this function may return path segments containing any
+ %% character, including <em>/</em> if, and only if, a <em>/</em> was escaped
+ %% and part of a path segment.
+--spec split_path(binary()) -> tokens().
++%%-spec split_path(binary()) -> tokens().
+ split_path(<< $/, Path/bits >>) ->
+ 	split_path(Path, []);
+ split_path(_) ->
+@@ -345,8 +345,8 @@ split_path(Path, Acc) ->
+ 			badrequest
+ 	end.
+ 
+--spec list_match(tokens(), dispatch_match(), bindings())
+-	-> {true, bindings(), undefined | tokens()} | false.
++%%-spec list_match(tokens(), dispatch_match(), bindings())
++	%% -> {true, bindings(), undefined | tokens()} | false.
+ %% Atom '...' matches any trailing path, stop right now.
+ list_match(List, ['...'], Binds) ->
+ 	{true, Binds, List};
+diff --git a/src/cowboy_static.erl b/src/cowboy_static.erl
+index 373ea52..c9edf38 100644
+--- a/src/cowboy_static.erl
++++ b/src/cowboy_static.erl
+@@ -190,19 +190,20 @@
+ -export([path_to_mimetypes/2]).
+ 
+ %% types
+--type dirpath() :: string() | binary() | [binary()].
+--type dirspec() :: dirpath() | {priv, atom(), dirpath()}.
+--type mimedef() :: {binary(), binary(), [{binary(), binary()}]}.
+--type etagarg() :: {filepath, binary()} | {mtime, calendar:datetime()}
+-	| {inode, non_neg_integer()} | {filesize, non_neg_integer()}.
++%% -type dirpath() :: string() | binary() | [binary()].
++%% -type dirspec() :: dirpath() | {priv, atom(), dirpath()}.
++%% -type mimedef() :: {binary(), binary(), [{binary(), binary()}]}.
++%% -type etagarg() :: {filepath, binary()} | {mtime, calendar:datetime()}
++%% 	| {inode, non_neg_integer()} | {filesize, non_neg_integer()}.
+ 
+ %% handler state
+ -record(state, {
+-	filepath  :: binary() | error,
+-	fileinfo  :: {ok, #file_info{}} | {error, _} | error,
+-	mimetypes :: {fun((binary(), T) -> [mimedef()]), T} | undefined,
+-	etag_fun  :: {fun(([etagarg()], T) ->
+-		undefined | {strong | weak, binary()}), T}}).
++	filepath  ,%% binary() | error,
++	fileinfo  ,%% {ok, #file_info{}} | {error, _} | error,
++	mimetypes ,%% {fun((binary(), T) -> [mimedef()]), T} | undefined,
++	etag_fun  %% {fun(([etagarg()], T) ->
++		%%undefined | {strong | weak, binary()}), T}
++         }).
+ 
+ 
+ %% @private Upgrade from HTTP handler to REST handler.
+@@ -211,7 +212,7 @@ init({_Transport, http}, _Req, _Opts) ->
+ 
+ 
+ %% @private Set up initial state of REST handler.
+--spec rest_init(Req, list()) -> {ok, Req, #state{}} when Req::cowboy_req:req().
++%%-spec rest_init(Req, list()) -> {ok, Req, #state{}} when Req::cowboy_req:req().
+ rest_init(Req, Opts) ->
+ 	Directory = proplists:get_value(directory, Opts),
+ 	Directory1 = directory_path(Directory),
+@@ -247,14 +248,14 @@ rest_init(Req, Opts) ->
+ 
+ 
+ %% @private Only allow GET and HEAD requests on files.
+--spec allowed_methods(Req, #state{})
+-	-> {[binary()], Req, #state{}} when Req::cowboy_req:req().
++%%-spec allowed_methods(Req, #state{})
++%%	-> {[binary()], Req, #state{}} when Req::cowboy_req:req().
+ allowed_methods(Req, State) ->
+ 	{[<<"GET">>, <<"HEAD">>], Req, State}.
+ 
+ %% @private
+--spec malformed_request(Req, #state{})
+-	-> {boolean(), Req, #state{}} when Req::cowboy_req:req().
++%%-spec malformed_request(Req, #state{})
++%%	-> {boolean(), Req, #state{}} when Req::cowboy_req:req().
+ malformed_request(Req, #state{filepath=error}=State) ->
+ 	{true, Req, State};
+ malformed_request(Req, State) ->
+@@ -262,8 +263,8 @@ malformed_request(Req, State) ->
+ 
+ 
+ %% @private Check if the resource exists under the document root.
+--spec resource_exists(Req, #state{})
+-	-> {boolean(), Req, #state{}} when Req::cowboy_req:req().
++%%-spec resource_exists(Req, #state{})
++%%	-> {boolean(), Req, #state{}} when Req::cowboy_req:req().
+ resource_exists(Req, #state{fileinfo={error, _}}=State) ->
+ 	{false, Req, State};
+ resource_exists(Req, #state{fileinfo={ok, Fileinfo}}=State) ->
+@@ -273,8 +274,8 @@ resource_exists(Req, #state{fileinfo={ok, Fileinfo}}=State) ->
+ %% @private
+ %% Access to a file resource is forbidden if it exists and the local node does
+ %% not have permission to read it. Directory listings are always forbidden.
+--spec forbidden(Req, #state{})
+-	-> {boolean(), Req, #state{}} when Req::cowboy_req:req().
++%%-spec forbidden(Req, #state{})
++%%	-> {boolean(), Req, #state{}} when Req::cowboy_req:req().
+ forbidden(Req, #state{fileinfo={_, #file_info{type=directory}}}=State) ->
+ 	{true, Req, State};
+ forbidden(Req, #state{fileinfo={error, eacces}}=State) ->
+@@ -286,8 +287,8 @@ forbidden(Req, #state{fileinfo={ok, #file_info{access=Access}}}=State) ->
+ 
+ 
+ %% @private Read the time a file system system object was last modified.
+--spec last_modified(Req, #state{})
+-	-> {calendar:datetime(), Req, #state{}} when Req::cowboy_req:req().
++%%-spec last_modified(Req, #state{})
++%%	-> {calendar:datetime(), Req, #state{}} when Req::cowboy_req:req().
+ last_modified(Req, #state{fileinfo={ok, #file_info{mtime=Modified}}}=State) ->
+ 	{erlang:localtime_to_universaltime(Modified), Req, State}.
+ 
+@@ -295,8 +296,8 @@ last_modified(Req, #state{fileinfo={ok, #file_info{mtime=Modified}}}=State) ->
+ %% @private Generate the ETag header value for this file.
+ %% The ETag header value is only generated if the resource is a file that
+ %% exists in document root.
+--spec generate_etag(Req, #state{})
+-	-> {undefined | binary(), Req, #state{}} when Req::cowboy_req:req().
++%%-spec generate_etag(Req, #state{})
++%%	-> {undefined | binary(), Req, #state{}} when Req::cowboy_req:req().
+ generate_etag(Req, #state{fileinfo={_, #file_info{type=regular, inode=INode,
+ 		mtime=Modified, size=Filesize}}, filepath=Filepath,
+ 		etag_fun={ETagFun, ETagData}}=State) ->
+@@ -309,7 +310,7 @@ generate_etag(Req, State) ->
+ 
+ 
+ %% @private Return the content type of a file.
+--spec content_types_provided(cowboy_req:req(), #state{}) -> tuple().
++%%-spec content_types_provided(cowboy_req:req(), #state{}) -> tuple().
+ content_types_provided(Req, #state{filepath=Filepath,
+ 		mimetypes={MimetypesFun, MimetypesData}}=State) ->
+ 	Mimetypes = [{T, file_contents}
+@@ -318,7 +319,7 @@ content_types_provided(Req, #state{filepath=Filepath,
+ 
+ 
+ %% @private Return a function that writes a file directly to the socket.
+--spec file_contents(cowboy_req:req(), #state{}) -> tuple().
++%%-spec file_contents(cowboy_req:req(), #state{}) -> tuple().
+ file_contents(Req, #state{filepath=Filepath,
+ 		fileinfo={ok, #file_info{size=Filesize}}}=State) ->
+ 	Writefile = fun(Socket, Transport) ->
+@@ -332,7 +333,7 @@ file_contents(Req, #state{filepath=Filepath,
+ 	{{stream, Filesize, Writefile}, Req, State}.
+ 
+ 
+--spec directory_path(dirspec()) -> dirpath().
++%%-spec directory_path(dirspec()) -> dirpath().
+ directory_path({priv_dir, App, []}) ->
+ 	priv_dir_path(App);
+ directory_path({priv_dir, App, [H|_]=Path}) when is_integer(H) ->
+@@ -345,7 +346,7 @@ directory_path(Path) ->
+ 	Path.
+ 
+ %% @private Ensure that a file path is of the same type as a request path.
+--spec filepath_path(dirpath()) -> Path::[binary()].
++%%-spec filepath_path(dirpath()) -> Path::[binary()].
+ filepath_path([H|_]=Path) when is_integer(H) ->
+ 	filename:split(list_to_binary(Path));
+ filepath_path(Path) when is_binary(Path) ->
+@@ -355,7 +356,7 @@ filepath_path([H|_]=Path) when is_binary(H) ->
+ 
+ %% @private Validate a request path for unsafe characters.
+ %% There is no way to escape special characters in a filesystem path.
+--spec check_path(Path::[binary()]) -> ok | error.
++%%-spec check_path(Path::[binary()]) -> ok | error.
+ check_path([]) -> ok;
+ check_path([<<"">>|_T]) -> error;
+ check_path([<<".">>|_T]) -> error;
+@@ -368,7 +369,7 @@ check_path([H|T]) ->
+ 
+ 
+ %% @private Join the the directory and request paths.
+--spec join_paths(dirpath(), [binary()]) -> binary().
++%%-spec join_paths(dirpath(), [binary()]) -> binary().
+ join_paths([H|_]=Dirpath, Filepath) when is_integer(H) ->
+ 	filename:join(filename:split(Dirpath) ++ Filepath);
+ join_paths([H|_]=Dirpath, Filepath) when is_binary(H) ->
+@@ -380,14 +381,14 @@ join_paths([], Filepath) ->
+ 
+ 
+ %% @private Return the path to the priv/ directory of an application.
+--spec priv_dir_path(atom()) -> string().
++%%-spec priv_dir_path(atom()) -> string().
+ priv_dir_path(App) ->
+ 	case code:priv_dir(App) of
+ 		{error, bad_name} -> priv_dir_mod(App);
+ 		Dir -> Dir
+ 	end.
+ 
+--spec priv_dir_mod(atom()) -> string().
++%%-spec priv_dir_mod(atom()) -> string().
+ priv_dir_mod(Mod) ->
+ 	case code:which(Mod) of
+ 		File when not is_list(File) -> "../priv";
+@@ -399,8 +400,8 @@ priv_dir_mod(Mod) ->
+ %% If a list of extension - mimetype pairs are provided as the mimetypes
+ %% an attempt to find the mimetype using the file extension. If no match
+ %% is found the default mimetype is returned.
+--spec path_to_mimetypes(binary(), [{binary(), [mimedef()]}]) ->
+-		[mimedef()].
++%%-spec path_to_mimetypes(binary(), [{binary(), [mimedef()]}]) ->
++%%		[mimedef()].
+ path_to_mimetypes(Filepath, Extensions) when is_binary(Filepath) ->
+ 	Ext = filename:extension(Filepath),
+ 	case Ext of
+@@ -408,26 +409,26 @@ path_to_mimetypes(Filepath, Extensions) when is_binary(Filepath) ->
+ 		_Ext -> path_to_mimetypes_(Ext, Extensions)
+ 	end.
+ 
+--spec path_to_mimetypes_(binary(), [{binary(), [mimedef()]}]) -> [mimedef()].
++%%-spec path_to_mimetypes_(binary(), [{binary(), [mimedef()]}]) -> [mimedef()].
+ path_to_mimetypes_(Ext, Extensions) ->
+ 	case lists:keyfind(cowboy_bstr:to_lower(Ext), 1, Extensions) of
+ 		{_, MTs} -> MTs;
+ 		_Unknown -> default_mimetype()
+ 	end.
+ 
+--spec default_mimetype() -> [mimedef()].
++%%-spec default_mimetype() -> [mimedef()].
+ default_mimetype() ->
+ 	[{<<"application">>, <<"octet-stream">>, []}].
+ 
+ 
+ %% @private Do not send ETag headers in the default configuration.
+--spec no_etag_function([etagarg()], undefined) -> undefined.
++%%-spec no_etag_function([etagarg()], undefined) -> undefined.
+ no_etag_function(_Args, undefined) ->
+ 	undefined.
+ 
+ %% @private A simple alternative is to send an ETag based on file attributes.
+ -type fileattr() :: filepath | filesize | mtime | inode.
+--spec attr_etag_function([etagarg()], [fileattr()]) -> {strong, binary()}.
++%%-spec attr_etag_function([etagarg()], [fileattr()]) -> {strong, binary()}.
+ attr_etag_function(Args, Attrs) ->
+ 	[[_|H]|T] = [begin
+ 		{_,Pair} = {_,{_,_}} = {Attr,lists:keyfind(Attr, 1, Args)},
+diff --git a/src/cowboy_sup.erl b/src/cowboy_sup.erl
+index 0e4e59a..d5dccb6 100644
+--- a/src/cowboy_sup.erl
++++ b/src/cowboy_sup.erl
+@@ -26,7 +26,7 @@
+ 
+ %% API.
+ 
+--spec start_link() -> {ok, pid()}.
++%%-spec start_link() -> {ok, pid()}.
+ start_link() ->
+ 	supervisor:start_link({local, ?SUPERVISOR}, ?MODULE, []).
+ 
+diff --git a/src/cowboy_websocket.erl b/src/cowboy_websocket.erl
+index debb69f..953e11c 100644
+--- a/src/cowboy_websocket.erl
++++ b/src/cowboy_websocket.erl
+@@ -24,32 +24,32 @@
+ %% Internal.
+ -export([handler_loop/4]).
+ 
+--type close_code() :: 1000..4999.
+--export_type([close_code/0]).
++%% -type close_code() :: 1000..4999.
++%% -export_type([close_code/0]).
+ 
+--type frame() :: close | ping | pong
+-	| {text | binary | close | ping | pong, binary()}
+-	| {close, close_code(), binary()}.
+--export_type([frame/0]).
++%% -type frame() :: close | ping | pong
++%% 	| {text | binary | close | ping | pong, binary()}
++%% 	| {close, close_code(), binary()}.
++%% -export_type([frame/0]).
+ 
+--type opcode() :: 0 | 1 | 2 | 8 | 9 | 10.
+--type mask_key() :: 0..16#ffffffff.
+--type frag_state() :: undefined
+-	| {nofin, opcode(), binary()} | {fin, opcode(), binary()}.
++%% -type opcode() :: 0 | 1 | 2 | 8 | 9 | 10.
++%% -type mask_key() :: 0..16#ffffffff.
++%% -type frag_state() :: undefined
++%% 	| {nofin, opcode(), binary()} | {fin, opcode(), binary()}.
+ 
+ -record(state, {
+-	env :: cowboy_middleware:env(),
+-	socket = undefined :: inet:socket(),
+-	transport = undefined :: module(),
+-	handler :: module(),
+-	handler_opts :: any(),
+-	key = undefined :: undefined | binary(),
+-	timeout = infinity :: timeout(),
+-	timeout_ref = undefined :: undefined | reference(),
+-	messages = undefined :: undefined | {atom(), atom(), atom()},
+-	hibernate = false :: boolean(),
+-	frag_state = undefined :: frag_state(),
+-	utf8_state = <<>> :: binary()
++	env ,%% cowboy_middleware:env(),
++	socket = undefined ,%% inet:socket(),
++	transport = undefined ,%% module(),
++	handler ,%% module(),
++	handler_opts ,%% any(),
++	key = undefined ,%% undefined | binary(),
++	timeout = infinity ,%% timeout(),
++	timeout_ref = undefined ,%% undefined | reference(),
++	messages = undefined ,%% undefined | {atom(), atom(), atom()},
++	hibernate = false ,%% boolean(),
++	frag_state = undefined ,%% frag_state(),
++	utf8_state = <<>> %% binary()
+ }).
+ 
+ %% @doc Upgrade an HTTP request to the Websocket protocol.
+@@ -57,10 +57,10 @@
+ %% You do not need to call this function manually. To upgrade to the Websocket
+ %% protocol, you simply need to return <em>{upgrade, protocol, {@module}}</em>
+ %% in your <em>cowboy_http_handler:init/3</em> handler function.
+--spec upgrade(Req, Env, module(), any())
+-	-> {ok, Req, Env} | {error, 400, Req}
+-	| {suspend, module(), atom(), [any()]}
+-	when Req::cowboy_req:req(), Env::cowboy_middleware:env().
++%%-spec upgrade(Req, Env, module(), any())
++	%% -> {ok, Req, Env} | {error, 400, Req}
++	%% | {suspend, module(), atom(), [any()]}
++	%% when Req::cowboy_req:req(), Env::cowboy_middleware:env().
+ upgrade(Req, Env, Handler, HandlerOpts) ->
+ 	{_, ListenerPid} = lists:keyfind(listener, 1, Env),
+ 	ranch_listener:remove_connection(ListenerPid),
+@@ -72,8 +72,8 @@ upgrade(Req, Env, Handler, HandlerOpts) ->
+ 		{'EXIT', _Reason} -> upgrade_error(Req, Env)
+ 	end.
+ 
+--spec websocket_upgrade(#state{}, Req)
+-	-> {ok, #state{}, Req} when Req::cowboy_req:req().
++%%-spec websocket_upgrade(#state{}, Req)
++	%% -> {ok, #state{}, Req} when Req::cowboy_req:req().
+ websocket_upgrade(State, Req) ->
+ 	{ok, ConnTokens, Req2}
+ 		= cowboy_req:parse_header(<<"connection">>, Req),
+@@ -90,10 +90,10 @@ websocket_upgrade(State, Req) ->
+ 	{ok, State#state{key=Key},
+ 		cowboy_req:set_meta(websocket_version, IntVersion, Req5)}.
+ 
+--spec handler_init(#state{}, Req)
+-	-> {ok, Req, cowboy_middleware:env()} | {error, 400, Req}
+-	| {suspend, module(), atom(), [any()]}
+-	when Req::cowboy_req:req().
++%%-spec handler_init(#state{}, Req)
++	%% -> {ok, Req, cowboy_middleware:env()} | {error, 400, Req}
++	%% | {suspend, module(), atom(), [any()]}
++	%% when Req::cowboy_req:req().
+ handler_init(State=#state{env=Env, transport=Transport,
+ 		handler=Handler, handler_opts=HandlerOpts}, Req) ->
+ 	try Handler:websocket_init(Transport:name(), Req, HandlerOpts) of
+@@ -122,8 +122,8 @@ handler_init(State=#state{env=Env, transport=Transport,
+ 	end.
+ 
+ %% Only send an error reply if there is no resp_sent message.
+--spec upgrade_error(Req, Env) -> {ok, Req, Env} | {error, 400, Req}
+-	when Req::cowboy_req:req(), Env::cowboy_middleware:env().
++%%-spec upgrade_error(Req, Env) -> {ok, Req, Env} | {error, 400, Req}
++	%% when Req::cowboy_req:req(), Env::cowboy_middleware:env().
+ upgrade_error(Req, Env) ->
+ 	receive
+ 		{cowboy_req, resp_sent} ->
+@@ -132,10 +132,10 @@ upgrade_error(Req, Env) ->
+ 		{error, 400, Req}
+ 	end.
+ 
+--spec websocket_handshake(#state{}, Req, any())
+-	-> {ok, Req, cowboy_middleware:env()}
+-	| {suspend, module(), atom(), [any()]}
+-	when Req::cowboy_req:req().
++%%-spec websocket_handshake(#state{}, Req, any())
++	%% -> {ok, Req, cowboy_middleware:env()}
++	%% | {suspend, module(), atom(), [any()]}
++	%% when Req::cowboy_req:req().
+ websocket_handshake(State=#state{transport=Transport, key=Key},
+ 		Req, HandlerState) ->
+ 	Challenge = base64:encode(crypto:sha(
+@@ -151,10 +151,10 @@ websocket_handshake(State=#state{transport=Transport, key=Key},
+ 	handler_before_loop(State2#state{key=undefined,
+ 		messages=Transport:messages()}, Req2, HandlerState, <<>>).
+ 
+--spec handler_before_loop(#state{}, Req, any(), binary())
+-	-> {ok, Req, cowboy_middleware:env()}
+-	| {suspend, module(), atom(), [any()]}
+-	when Req::cowboy_req:req().
++%%-spec handler_before_loop(#state{}, Req, any(), binary())
++	%% -> {ok, Req, cowboy_middleware:env()}
++	%% | {suspend, module(), atom(), [any()]}
++	%% when Req::cowboy_req:req().
+ handler_before_loop(State=#state{
+ 			socket=Socket, transport=Transport, hibernate=true},
+ 		Req, HandlerState, SoFar) ->
+@@ -166,7 +166,7 @@ handler_before_loop(State=#state{socket=Socket, transport=Transport},
+ 	Transport:setopts(Socket, [{active, once}]),
+ 	handler_loop(State, Req, HandlerState, SoFar).
+ 
+--spec handler_loop_timeout(#state{}) -> #state{}.
++%%-spec handler_loop_timeout(#state{}) -> #state{}.
+ handler_loop_timeout(State=#state{timeout=infinity}) ->
+ 	State#state{timeout_ref=undefined};
+ handler_loop_timeout(State=#state{timeout=Timeout, timeout_ref=PrevRef}) ->
+@@ -176,10 +176,10 @@ handler_loop_timeout(State=#state{timeout=Timeout, timeout_ref=PrevRef}) ->
+ 	State#state{timeout_ref=TRef}.
+ 
+ %% @private
+--spec handler_loop(#state{}, Req, any(), binary())
+-	-> {ok, Req, cowboy_middleware:env()}
+-	| {suspend, module(), atom(), [any()]}
+-	when Req::cowboy_req:req().
++%%-spec handler_loop(#state{}, Req, any(), binary())
++	%% -> {ok, Req, cowboy_middleware:env()}
++	%% | {suspend, module(), atom(), [any()]}
++	%% when Req::cowboy_req:req().
+ handler_loop(State=#state{socket=Socket, messages={OK, Closed, Error},
+ 		timeout_ref=TRef}, Req, HandlerState, SoFar) ->
+ 	receive
+@@ -203,10 +203,10 @@ handler_loop(State=#state{socket=Socket, messages={OK, Closed, Error},
+ %% All frames passing through this function are considered valid,
+ %% with the only exception of text and close frames with a payload
+ %% which may still contain errors.
+--spec websocket_data(#state{}, Req, any(), binary())
+-	-> {ok, Req, cowboy_middleware:env()}
+-	| {suspend, module(), atom(), [any()]}
+-	when Req::cowboy_req:req().
++%%-spec websocket_data(#state{}, Req, any(), binary())
++	%% -> {ok, Req, cowboy_middleware:env()}
++	%% | {suspend, module(), atom(), [any()]}
++	%% when Req::cowboy_req:req().
+ %% RSV bits MUST be 0 unless an extension is negotiated
+ %% that defines meanings for non-zero values.
+ websocket_data(State, Req, HandlerState, << _:1, Rsv:3, _/bits >>)
+@@ -274,11 +274,11 @@ websocket_data(State, Req, HandlerState, Data) ->
+ 	handler_before_loop(State, Req, HandlerState, Data).
+ 
+ %% Initialize or update fragmentation state.
+--spec websocket_data(#state{}, Req, any(),
+-	opcode(), non_neg_integer(), mask_key(), binary(), 0 | 1)
+-	-> {ok, Req, cowboy_middleware:env()}
+-	| {suspend, module(), atom(), [any()]}
+-	when Req::cowboy_req:req().
++%%-spec websocket_data(#state{}, Req, any(),
++	%% opcode(), non_neg_integer(), mask_key(), binary(), 0 | 1)
++	%% -> {ok, Req, cowboy_middleware:env()}
++	%% | {suspend, module(), atom(), [any()]}
++	%% when Req::cowboy_req:req().
+ %% The opcode is only included in the first frame fragment.
+ websocket_data(State=#state{frag_state=undefined}, Req, HandlerState,
+ 		Opcode, Len, MaskKey, Data, 0) ->
+@@ -299,11 +299,11 @@ websocket_data(State, Req, HandlerState, Opcode, Len, MaskKey, Data, 1) ->
+ 	websocket_payload(State, Req, HandlerState,
+ 		Opcode, Len, MaskKey, <<>>, Data).
+ 
+--spec websocket_payload(#state{}, Req, any(),
+-	opcode(), non_neg_integer(), mask_key(), binary(), binary())
+-	-> {ok, Req, cowboy_middleware:env()}
+-	| {suspend, module(), atom(), [any()]}
+-	when Req::cowboy_req:req().
++%%-spec websocket_payload(#state{}, Req, any(),
++	%% opcode(), non_neg_integer(), mask_key(), binary(), binary())
++	%% -> {ok, Req, cowboy_middleware:env()}
++	%% | {suspend, module(), atom(), [any()]}
++	%% when Req::cowboy_req:req().
+ %% Close control frames with a payload MUST contain a valid close code.
+ websocket_payload(State, Req, HandlerState,
+ 		Opcode=8, Len, MaskKey, <<>>, << MaskedCode:2/binary, Rest/bits >>) ->
+@@ -390,7 +390,7 @@ websocket_payload(State, Req, HandlerState,
+ 		rotate_mask_key(MaskKey, byte_size(Unmasked)), Unmasked),
+ 	websocket_dispatch(State, Req, HandlerState, Rest, Opcode, Unmasked2).
+ 
+--spec websocket_unmask(B, mask_key(), B) -> B when B::binary().
++%%-spec websocket_unmask(B, mask_key(), B) -> B when B::binary().
+ websocket_unmask(<<>>, _, Unmasked) ->
+ 	Unmasked;
+ websocket_unmask(<< O:32, Rest/bits >>, MaskKey, Acc) ->
+@@ -410,7 +410,7 @@ websocket_unmask(<< O:8 >>, MaskKey, Acc) ->
+ 	<< Acc/binary, T:8 >>.
+ 
+ %% Because we unmask on the fly we need to continue from the right mask byte.
+--spec rotate_mask_key(mask_key(), non_neg_integer()) -> mask_key().
++%%-spec rotate_mask_key(mask_key(), non_neg_integer()) -> mask_key().
+ rotate_mask_key(MaskKey, UnmaskedLen) ->
+ 	Left = UnmaskedLen rem 4,
+ 	Right = 4 - Left,
+@@ -418,7 +418,7 @@ rotate_mask_key(MaskKey, UnmaskedLen) ->
+ 
+ %% Returns <<>> if the argument is valid UTF-8, false if not,
+ %% or the incomplete part of the argument if we need more data.
+--spec is_utf8(binary()) -> false | binary().
++%%-spec is_utf8(binary()) -> false | binary().
+ is_utf8(Valid = <<>>) ->
+ 	Valid;
+ is_utf8(<< _/utf8, Rest/binary >>) ->
+@@ -446,11 +446,11 @@ is_utf8(Incomplete = << 2#11110:5, _:3, 2#10:2, _:6, 2#10:2, _:6 >>) ->
+ is_utf8(_) ->
+ 	false.
+ 
+--spec websocket_payload_loop(#state{}, Req, any(),
+-	opcode(), non_neg_integer(), mask_key(), binary())
+-	-> {ok, Req, cowboy_middleware:env()}
+-	| {suspend, module(), atom(), [any()]}
+-	when Req::cowboy_req:req().
++%%-spec websocket_payload_loop(#state{}, Req, any(),
++	%% opcode(), non_neg_integer(), mask_key(), binary())
++	%% -> {ok, Req, cowboy_middleware:env()}
++	%% | {suspend, module(), atom(), [any()]}
++	%% when Req::cowboy_req:req().
+ websocket_payload_loop(State=#state{socket=Socket, transport=Transport,
+ 		messages={OK, Closed, Error}, timeout_ref=TRef},
+ 		Req, HandlerState, Opcode, Len, MaskKey, Unmasked) ->
+@@ -478,10 +478,10 @@ websocket_payload_loop(State=#state{socket=Socket, transport=Transport,
+ 				end)
+ 	end.
+ 
+--spec websocket_dispatch(#state{}, Req, any(), binary(), opcode(), binary())
+-	-> {ok, Req, cowboy_middleware:env()}
+-	| {suspend, module(), atom(), [any()]}
+-	when Req::cowboy_req:req().
++%%-spec websocket_dispatch(#state{}, Req, any(), binary(), opcode(), binary())
++	%% -> {ok, Req, cowboy_middleware:env()}
++	%% | {suspend, module(), atom(), [any()]}
++	%% when Req::cowboy_req:req().
+ %% Continuation frame.
+ websocket_dispatch(State=#state{frag_state={nofin, Opcode, SoFar}},
+ 		Req, HandlerState, RemainingData, 0, Payload) ->
+@@ -518,10 +518,10 @@ websocket_dispatch(State, Req, HandlerState, RemainingData, 10, Payload) ->
+ 	handler_call(State, Req, HandlerState, RemainingData,
+ 		websocket_handle, {pong, Payload}, fun websocket_data/4).
+ 
+--spec handler_call(#state{}, Req, any(), binary(), atom(), any(), fun())
+-	-> {ok, Req, cowboy_middleware:env()}
+-	| {suspend, module(), atom(), [any()]}
+-	when Req::cowboy_req:req().
++%%-spec handler_call(#state{}, Req, any(), binary(), atom(), any(), fun())
++	%% -> {ok, Req, cowboy_middleware:env()}
++	%% | {suspend, module(), atom(), [any()]}
++	%% when Req::cowboy_req:req().
+ handler_call(State=#state{handler=Handler, handler_opts=HandlerOpts}, Req,
+ 		HandlerState, RemainingData, Callback, Message, NextState) ->
+ 	try Handler:Callback(Message, Req, HandlerState) of
+@@ -600,8 +600,8 @@ websocket_opcode(close) -> 8;
+ websocket_opcode(ping) -> 9;
+ websocket_opcode(pong) -> 10.
+ 
+--spec websocket_send(frame(), #state{})
+-	-> ok | shutdown | {error, atom()}.
++%%-spec websocket_send(frame(), #state{})
++	%% -> ok | shutdown | {error, atom()}.
+ websocket_send(Type, #state{socket=Socket, transport=Transport})
+ 		when Type =:= close ->
+ 	Opcode = websocket_opcode(Type),
+@@ -638,8 +638,8 @@ websocket_send({Type, Payload}, #state{socket=Socket, transport=Transport}) ->
+ 	Transport:send(Socket,
+ 		[<< 1:1, 0:3, Opcode:4, 0:1, BinLen/bits >>, Payload]).
+ 
+--spec websocket_send_many([frame()], #state{})
+-	-> ok | shutdown | {error, atom()}.
++%%-spec websocket_send_many([frame()], #state{})
++	%% -> ok | shutdown | {error, atom()}.
+ websocket_send_many([], _) ->
+ 	ok;
+ websocket_send_many([Frame|Tail], State) ->
+@@ -649,10 +649,10 @@ websocket_send_many([Frame|Tail], State) ->
+ 		Error -> Error
+ 	end.
+ 
+--spec websocket_close(#state{}, Req, any(),
+-	{atom(), atom()} | {remote, close_code(), binary()})
+-	-> {ok, Req, cowboy_middleware:env()}
+-	when Req::cowboy_req:req().
++%%-spec websocket_close(#state{}, Req, any(),
++	%% {atom(), atom()} | {remote, close_code(), binary()})
++	%% -> {ok, Req, cowboy_middleware:env()}
++	%% when Req::cowboy_req:req().
+ websocket_close(State=#state{socket=Socket, transport=Transport},
+ 		Req, HandlerState, Reason) ->
+ 	case Reason of
+@@ -671,9 +671,9 @@ websocket_close(State=#state{socket=Socket, transport=Transport},
+ 	end,
+ 	handler_terminate(State, Req, HandlerState, Reason).
+ 
+--spec handler_terminate(#state{}, Req, any(), atom() | {atom(), atom()})
+-	-> {ok, Req, cowboy_middleware:env()}
+-	when Req::cowboy_req:req().
++%%-spec handler_terminate(#state{}, Req, any(), atom() | {atom(), atom()})
++	%% -> {ok, Req, cowboy_middleware:env()}
++	%% when Req::cowboy_req:req().
+ handler_terminate(#state{env=Env, handler=Handler, handler_opts=HandlerOpts},
+ 		Req, HandlerState, TerminateReason) ->
+ 	try
+@@ -690,8 +690,8 @@ handler_terminate(#state{env=Env, handler=Handler, handler_opts=HandlerOpts},
+ 	end,
+ 	{ok, Req, [{result, closed}|Env]}.
+ 
+--spec payload_length_to_binary(0..16#7fffffffffffffff)
+-	-> << _:7 >> | << _:23 >> | << _:71 >>.
++%%-spec payload_length_to_binary(0..16#7fffffffffffffff)
++	%% -> << _:7 >> | << _:23 >> | << _:71 >>.
+ payload_length_to_binary(N) ->
+ 	case N of
+ 		N when N =< 125 -> << N:7 >>;
+diff --git a/src/cowboy_websocket_handler.erl b/src/cowboy_websocket_handler.erl
+index bd2ed5a..d6b9628 100644
+--- a/src/cowboy_websocket_handler.erl
++++ b/src/cowboy_websocket_handler.erl
+@@ -48,34 +48,42 @@
+ %% <em>hibernate</em>. Doing so helps save memory and improve CPU usage.
+ -module(cowboy_websocket_handler).
+ 
+--type opts() :: any().
+--type state() :: any().
+--type terminate_reason() :: {normal, shutdown}
+-	| {normal, timeout}
+-	| {error, closed}
+-	| {error, badframe}
+-	| {error, atom()}.
++%% -type opts() :: any().
++%% -type state() :: any().
++%% -type terminate_reason() :: {normal, shutdown}
++%% 	| {normal, timeout}
++%% 	| {error, closed}
++%% 	| {error, badframe}
++%% 	| {error, atom()}.
+ 
+--callback websocket_init(atom(), Req, opts())
+-	-> {ok, Req, state()}
+-	| {ok, Req, state(), hibernate}
+-	| {ok, Req, state(), timeout()}
+-	| {ok, Req, state(), timeout(), hibernate}
+-	| {shutdown, Req}
+-	when Req::cowboy_req:req().
+--callback websocket_handle({text | binary | ping | pong, binary()}, Req, State)
+-	-> {ok, Req, State}
+-	| {ok, Req, State, hibernate}
+-	| {reply, cowboy_websocket:frame() | [cowboy_websocket:frame()], Req, State}
+-	| {reply, cowboy_websocket:frame() | [cowboy_websocket:frame()], Req, State, hibernate}
+-	| {shutdown, Req, State}
+-	when Req::cowboy_req:req(), State::state().
+--callback websocket_info(any(), Req, State)
+-	-> {ok, Req, State}
+-	| {ok, Req, State, hibernate}
+-	| {reply, cowboy_websocket:frame() | [cowboy_websocket:frame()], Req, State}
+-	| {reply, cowboy_websocket:frame() | [cowboy_websocket:frame()], Req, State, hibernate}
+-	| {shutdown, Req, State}
+-	when Req::cowboy_req:req(), State::state().
+--callback websocket_terminate(terminate_reason(), cowboy_req:req(), state())
+-	-> ok.
++%% -callback websocket_init(atom(), Req, opts())
++%% 	-> {ok, Req, state()}
++%% 	| {ok, Req, state(), hibernate}
++%% 	| {ok, Req, state(), timeout()}
++%% 	| {ok, Req, state(), timeout(), hibernate}
++%% 	| {shutdown, Req}
++%% 	when Req::cowboy_req:req().
++%% -callback websocket_handle({text | binary | ping | pong, binary()}, Req, State)
++%% 	-> {ok, Req, State}
++%% 	| {ok, Req, State, hibernate}
++%% 	| {reply, cowboy_websocket:frame() | [cowboy_websocket:frame()], Req, State}
++%% 	| {reply, cowboy_websocket:frame() | [cowboy_websocket:frame()], Req, State, hibernate}
++%% 	| {shutdown, Req, State}
++%% 	when Req::cowboy_req:req(), State::state().
++%% -callback websocket_info(any(), Req, State)
++%% 	-> {ok, Req, State}
++%% 	| {ok, Req, State, hibernate}
++%% 	| {reply, cowboy_websocket:frame() | [cowboy_websocket:frame()], Req, State}
++%% 	| {reply, cowboy_websocket:frame() | [cowboy_websocket:frame()], Req, State, hibernate}
++%% 	| {shutdown, Req, State}
++%% 	when Req::cowboy_req:req(), State::state().
++%% -callback websocket_terminate(terminate_reason(), cowboy_req:req(), state())
++%% 	-> ok.
++
++-export([behaviour_info/1]).
++
++behaviour_info(callbacks) ->
++    [{websocket_init, 3}, {websocket_handle, 3}, {websocket_info, 3},
++     {websocket_terminate, 3}];
++behaviour_info(_Other) ->
++    undefined.
