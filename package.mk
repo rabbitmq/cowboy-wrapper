@@ -1,4 +1,5 @@
 APP_NAME:=cowboy
+DEPS:=ranch-wrapper
 
 UPSTREAM_GIT:=https://github.com/rabbitmq/cowboy.git
 UPSTREAM_REVISION:=efbd9133261e1aabf473f2f6f5ab4cbb36062481
