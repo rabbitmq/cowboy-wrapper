@@ -1,0 +1,12 @@
+*~
+.sw?
+.*.sw?
+*.beam
+erl_crash.dump
+/build/
+/cover/
+/cowboy-git/
+/dist/
+/ebin/
+/hash.mk
+/tmp/
