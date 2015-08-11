@@ -1,20 +1,10 @@
 APP_NAME:=cowboy
+DEPS:=cowlib-wrapper ranch-wrapper
 
-UPSTREAM_GIT:=https://github.com/rabbitmq/cowboy.git
-UPSTREAM_REVISION:=4b93c2d19a10e5d9cee
+UPSTREAM_GIT:=https://github.com/ninenines/cowboy.git
+UPSTREAM_REVISION:=b8e4115eb13488c517d8d8ef33c47d0eaa7838c6 # 1.0.3
 RETAIN_ORIGINAL_VERSION:=true
-WRAPPER_PATCHES:=\
-	0001-R12-fake-iodata-type.patch \
-	0002-R12-drop-all-references-to-boolean-type.patch \
-	0003-R12-drop-all-references-to-reference-type.patch \
-	0004-R12-drop-references-to-iodata-type.patch \
-	0005-R12-drop-references-to-Default-any-type.patch \
-	0006-Use-erlang-integer_to_list-and-lists-max-instead-of-.patch \
-	0007-R12-type-definitions-must-be-ordered.patch \
-	0008-sec-websocket-protocol.patch
-
-# Path include/http.hrl is needed during compilation
-INCLUDE_DIRS+=$(CLONE_DIR)
+WRAPPER_PATCHES:=
 
 ORIGINAL_APP_FILE:=$(CLONE_DIR)/src/$(APP_NAME).app.src
 DO_NOT_GENERATE_APP_FILE=true
