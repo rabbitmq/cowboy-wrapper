@@ -1,0 +1,14 @@
+diff --git a/src/cowboy.app.src b/src/cowboy.app.src
+index 2b8add0..09afc42 100644
+--- a/src/cowboy.app.src
++++ b/src/cowboy.app.src
+@@ -22,8 +22,7 @@
+ 		kernel,
+ 		stdlib,
+ 		ranch,
+-		cowlib,
+-		crypto
++		cowlib
+ 	]},
+ 	{mod, {cowboy_app, []}},
+ 	{env, []}
